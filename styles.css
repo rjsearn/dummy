@@ -1,19 +1,38 @@
 /* Add your custom styles here */
-body {
-    background-color: #f4f6f1;
-}
 
-.container {
-    background-color: #ffffff;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+body {
+    background-color: #f8f9fa;
 }
 
 .navbar {
-    margin-bottom: 2px;
-    background-color: #ecebfa;
+    background-color: #e9ecef;
 }
-#example {
-  scroll-behavior: smooth;
+
+.nav-pills .nav-link {
+    background-color: #dee2e6;
+    color: #495057;
 }
+
+.nav-pills .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tab-content {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Add any additional styles as needed */
