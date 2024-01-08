@@ -9,7 +9,7 @@ body {
 }
 
 .nav-pills .nav-link {
-    background-color: #dee2e6;
+    background-color: #c6c9cc; /* Button color */
     color: #495057;
 }
 
@@ -33,6 +33,25 @@ img {
     border: 1px solid #dee2e6;
     border-radius: 5px;
     margin-top: 10px;
+}
+
+/* Move main menu to the left */
+.left-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #c6c9cc; /* Button color */
+    padding-top: 60px; /* Adjust padding to avoid overlap with navbar */
+}
+
+.left-menu .nav-link {
+    color: #495057;
+    padding: 10px 20px;
+}
+
+.left-menu .nav-link.active {
+    color: #fff;
 }
 
 /* Add any additional styles as needed */
