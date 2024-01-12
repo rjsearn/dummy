@@ -27,5 +27,3 @@ const links = [
     ],
     ["https://example.com/link12", "https://example.com/link13", "https://example.com/link15"]
 ];
-
-export { headings, images, links };
