@@ -210,14 +210,14 @@
             <div class="d-flex justify-content-between mt-3">
                 <button class="btn btn-previous float-left btn-lighter" onclick="showPreviousImage()">Previous
                 </button>
-                <button class="btn btn-next float-right btn-lighter" onclick="showNextImage()">Next Page</button>
+                <button id="nextButton" class="btn btn-next float-right btn-lighter" onclick="showNextImage()">Next Page</button>
             </div>
         </div>
 
         <div class="btn-group">
-            <h2 class="easybuilder-heading">EasyBuilder Training</h2>
-            <button class="btn btn-change-content mt-3" onclick="changeContent(1)">Contents 1</button><br><br><br>
-            <button class="btn btn-change-content mt-3" onclick="changeContent(2)">Contents 2</button><br><br><br>
+            <h2 class="easybuilder-heading">EasyBuilder Training</h2><br>
+            <button class="btn btn-change-content mt-3" onclick="changeContent(1)">Contents 1</button><br><br>
+            <button class="btn btn-change-content mt-3" onclick="changeContent(2)">Contents 2</button><br><br>
             <button class="btn btn-change-content mt-3" onclick="changeContent(3)">Contents 3</button>
         </div>
     </div>
@@ -229,14 +229,13 @@
     let currentSet = 0;
 
     function showNextImage() {
-        currentIndex = (currentIndex + 1) % getCurrentSetLength();
+        if (currentIndex < getCurrentSetLength() - 1) {
+            currentIndex = (currentIndex + 1) % getCurrentSetLength();
         document.getElementById("displayedImage").src = images[currentSet][currentIndex];
         document.getElementById("imageLink").href = links[currentSet][currentIndex];
         updateHeading();
-
-        if (currentIndex === getCurrentSetLength() - 1) {
-            window.open("https://success.com/", "_blank");
-        }
+       }
+        
     }
 
     function showPreviousImage() {
