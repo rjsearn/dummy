@@ -1,92 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>Beautiful Website</title>
+    <title>Image Rotation</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #495057;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .telegram {
+            margin-top: 8px;
+            margin-bottom: 4px;
+            display: flex;
+            justify-content: center;
+            margin-left: 15%;
+        }
+
+        .telegram a {
+            display: block;
+            background-color: #FFFACD;
+            border-radius: 7px;
+            overflow: hidden;
+            position: relative;
+            text-decoration: none;
+            margin-right: 0%;
+        }
+
+        .telegram .tg-text {
+            color: #006600;
+            font-size: 11px;
+            line-height: 18px;
+            font-weight: bold;
+            padding: 1px;
+            position: relative;
+            z-index: 10;
+            text-shadow: #FFBF00;
+            text-align: center;
+        }
+
+        .tg-text:hover {
+            background-color: #FFAE42;
+        }
+
+        .heading {
+            text-align: center;
+            margin-left: 25%;
+            width: 64%;
+        }
+
+        .easybuilder-heading {
+            text-align: center;
+            color: #C19A6B;
+            margin-top: 2px; /* Adjust margin as needed */
+            margin-left: 7%;
+            font-family: 'Lobster', cursive; /* Set the font-family */
+            font-size: 20px;
+
+         }
+
+        .btn-group button {
+            float: left;
+            margin-left: 11%;
+            background-color: #9CB071;
+            color: white;
+            padding: 7px 5px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 13%;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-group button:not(:last-child) {
+            border-bottom: none;
+        }
+
+        .btn-group button:hover {
+            background-color: #009900;
+        }
+
+        .frame {
+            float: right;
+            width: 54%;
+            height: 400px;
+            margin-right: 14%;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 6px;
+        }
+
+        .img-container {
+            position: relative;
+            text-align: center;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            max-height: 100%;
+            border: 1px solid #dee2e6;
+        }
+
+        .image-tab {
+            position: relative;
+            display: inline-block;
+            bottom: 0%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            justify-content: center;
+            background-color: #FFF2B2;
+            width: 22%;
+            border-radius: 10px;
+        }
+
+        .image-tab:hover {
+            background-color: #FFAE42;
+        }
+
+        .image-link {
+            color: #495057;
+            text-align: center;
+            display: inline-block;
+            padding: 1px;
+            width: 100%;
+            font-weight: bold;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-next,
+        .btn-previous {
+            padding: 6px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .btn-previous:hover {
+            background-color: #FF6600;
+        } 
+
+        .btn-next:hover {
+            background-color: #009900;
+        }
+        
+
+        .btn-next {
+            background-color: #9CB071;
+            color: #fff;
+            margin-left: 56%;
+        }
+
+        .btn-previous {
+            background-color: #FFAE42;
+            color: #fff;
+            margin-left: 2%;
+        }
+
+        .d-flex.justify-content-between .btn {
+            position: relative;
+            margin-top: 1px;
+            width: 20%;
+            margin-top: 10px;
+            justify-content: center;
+        }
+    </style>
 </head>
+
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Beautiful Website</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="page1.html">Page 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="page2.html">Page 2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="page3.html">Page 3</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="page4.html">Page 4</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="page5.html">Page 5</a>
-                </li>
-            </ul>
-        </div>
+    <div class="telegram">
+        <a href="https://t.me/+ATdWQ5nmfPcxZGJl" target="_blank">
+            <div class="tg-text">>>   Contact EasyBuilder Help   <<</div>
+        </a>
     </div>
-</nav>
+   
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-2 col-md-3">
-            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <button class="nav-link" onclick="scrollToAnchor('section1')">Tab 1</button>
-                <button class="nav-link" onclick="scrollToAnchor('section2')">Tab 2</button>
-                <button class="nav-link" onclick="scrollToAnchor('section3')">Tab 3</button>
-                <button class="nav-link" onclick="scrollToAnchor('section4')">Tab 4</button>
-                <button class="nav-link" onclick="scrollToAnchor('section5')">Tab 5</button>
+    <div class="container mt-4">
+        
+        <div class="heading">
+            <h2 id="imageHeading" class="text-center">This is the heading</h2>
+        </div>
+
+        <div class="frame">
+            <div class="img-container">
+                <img id="displayedImage" src="https://i.imgur.com/VgvPhWq.png" alt="Image 1">
+            </div>
+
+            <div class="image-tab d-none d-md-block">
+                <a class="image-link" id="imageLink" href="https://example.com/link1" target="_blank">Start Here Now</a>
+            </div>
+
+            <div class="d-flex justify-content-between mt-3">
+                <button class="btn btn-previous float-left btn-lighter" onclick="showPreviousImage()">Previous
+                </button>
+                <button class="btn btn-next float-right btn-lighter" onclick="showNextImage()">Next Page</button>
             </div>
         </div>
-        <div class="col-lg-10 col-md-9">
-            <div class="container mt-4 text-center">
-                <h1>Welcome to our Beautiful Website</h1>
-                <p>This is the home page content.</p>
-                <img src="https://i.imgur.com/ZC4PFeK.png" class="img-fluid" alt="Beautiful Image">
-            </div>
-            <section id="section1">
-                <h1>Section 1</h1>
-                <!-- Content for Section 1 -->
-            </section>
-            <section id="section2">
-                <h1>Section 2</h1>
-                <!-- Content for Section 2 -->
-            </section>
-            <section id="section3">
-                <h1>Section 3</h1>
-                <!-- Content for Section 3 -->
-            </section>
-            <section id="section4">
-                <h1>Section 4</h1>
-                <!-- Content for Section 4 -->
-            </section>
-            <section id="section5">
-                <h1>Section 5</h1>
-                <!-- Content for Section 5 -->
-            </section>
+
+        <div class="btn-group">
+            <h2 class="easybuilder-heading">EasyBuilder Training</h2>
+            <button class="btn btn-change-content mt-3" onclick="changeContent(1)">Contents 1</button><br><br><br>
+            <button class="btn btn-change-content mt-3" onclick="changeContent(2)">Contents 2</button><br><br><br>
+            <button class="btn btn-change-content mt-3" onclick="changeContent(3)">Contents 3</button>
         </div>
     </div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="dataModule.js"></script>
 <script>
-    function scrollToAnchor(anchorId) {
-        const element = document.getElementById(anchorId);
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    let currentIndex = 0;
+    let currentSet = 0;
+
+    function showNextImage() {
+        currentIndex = (currentIndex + 1) % getCurrentSetLength();
+        document.getElementById("displayedImage").src = images[currentSet][currentIndex];
+        document.getElementById("imageLink").href = links[currentSet][currentIndex];
+        updateHeading();
+
+        if (currentIndex === getCurrentSetLength() - 1) {
+            window.open("https://success.com/", "_blank");
+        }
+    }
+
+    function showPreviousImage() {
+        if (currentIndex > 0) {
+            currentIndex = (currentIndex - 1) % getCurrentSetLength();
+            document.getElementById("displayedImage").src = images[currentSet][currentIndex];
+            document.getElementById("imageLink").href = links[currentSet][currentIndex];
+            updateHeading();
+        }
+    }
+
+    function updateHeading() {
+        document.getElementById("imageHeading").textContent = headings[currentSet][currentIndex];
+    }
+
+    function changeContent(set) {
+        currentSet = set - 1;
+        currentIndex = 0;
+        document.getElementById('displayedImage').src = images[currentSet][currentIndex];
+        document.getElementById('imageLink').href = links[currentSet][currentIndex];
+        updateHeading();
+    }
+
+    changeContent(1);
+
+    function getCurrentSetLength() {
+        return images[currentSet].length;
     }
 </script>
-</body>
-</html>
