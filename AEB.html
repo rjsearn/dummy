@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EasyBuilderSLPage</title>
+<meta name="robots" content="NOFOLLOW">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content />
+<meta property="og:title" content="EasyBuilderSLPage" />
+<link rel="icon" type="image/x-icon" href>
+<link id="mainStyle" rel="stylesheet" href="https://llpgpro.com/styl.css?v=31">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One:400,700|Oswald:400,700|Caveat:400,700|Caveat+Brush:400,700|Poppins:400,700|Hammersmith+One:400,700|Roboto:400,700|Kalam:400,700|Allura:400,700|Acme:400,700|Cabin:400,700|Anton:400,700|Abhaya+Libre:400,700|Courier+Prime:400,700|Cutive+Mono:400,700|Nunito:400,700|Ranchers:400,700|Permanent+Marker:400,700|Audiowide:400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+<link rel="stylesheet" href="https://llpgpro.com/animate.min.css?v=2" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script id="jc" type="text/javascript">var llcv_dm = "llpgpro.com", llcv_d = "177731", llcv_c = "161058", llcv_r = "0", llcv_i = "rjsearn", statid = 858661, tableid = 13, adbaron = "0", listid = "-2", listurl = "", listurlnew = "", thisip = "2405:201:500e:7019:f0d6:80a2:77ed:8ea8", adbarcounton = 0; $("#jc").html("");
+</script>
+<script src="https://llpgpro.com/js.js?v=35"></script>
+<script src="https://llpgpro.com/cd.js?v=1"></script>
+<script>
+        function openUrl(button) {
+            var url;
+            var queryParams = window.location.search.substring(1);
+            var code1 = getQueryParam("CEG");
+            var code2 = getQueryParam("EZC");
+            var code3 = getQueryParam("TBP");
+            var code4 = getQueryParam("CTC");
+            var code4 = getQueryParam("SND");
+
+            switch (button.name) {
+                case "The ClickEngine":
+                    url = code1 ? "https://warriorplus.com/" + code1 : button.value;
+                    break;
+                case "EzClixBuyer Club":
+                    url = code2 ? "https://warriorplus.com/" + code2 : button.value;
+                    break;
+                case "TrafficBlaster Pro":
+                    url = code3 ? "https://warriorplus.com/" + code3 : button.value;
+                    break;
+                case "ClickTraffic Cyclone":
+                    url = code4 ? "https://warriorplus.com/" + code4 : button.value;
+                    break;
+                case "SendBuyers Traffic":
+                    url = code4 ? "https://sendbuyers.com/?aff=" + code4 : button.value;
+                    break;
+
+                default:
+                    url = "";
+            }
+            window.open(url, '_blank').focus();
+        }
+
+        function getQueryParam(name) {
+            var urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const outputUrlInput = document.getElementById("output-url");
+            const copyButton = document.getElementById("copy-button");
+            const seeYourPageButton = document.getElementById("see-your-page-button");
+
+            function updateOutputUrl() {
+                const input1 = document.getElementById("inputbox1").value.trim();
+                const input2 = document.getElementById("inputbox2").value.trim();
+                const input3 = document.getElementById("inputbox3").value.trim();
+                const input4 = document.getElementById("inputbox4").value.trim();
+                const input5 = document.getElementById("inputbox5").value.trim();
+
+                const inputstring1 = input1.startsWith("https://warriorplus.com/") ? input1.substring("https://warriorplus.com/".length) : "o2/a/pbyg3j/0";
+                const inputstring2 = input2.startsWith("https://warriorplus.com/") ? input2.substring("https://warriorplus.com/".length) : "o2/a/ht2pjj/0";
+                const inputstring3 = input3.startsWith("https://warriorplus.com/") ? input3.substring("https://warriorplus.com/".length) : "o2/a/czl1tv/0";
+                const inputstring4 = input4.startsWith("https://warriorplus.com/") ? input4.substring("https://warriorplus.com/".length) : "o2/a/f5xqc8/0";
+                const inputstring5 = input5.startsWith("https://sendbuyers.com/?aff=") ? input5.substring("https://sendbuyers.com/?aff=".length) : "138&src=EasyBuilderPage";
+
+                const outputURL = `https://rjsearn.github.io/easybuilder/refer?CEG=${inputstring1}&EZC=${inputstring2}&TBP=${inputstring3}&CTC=${inputstring4}&SND=${inputstring5}`;
+                outputUrlInput.value = outputURL;
+            }
+
+            function copyOutputUrl() {
+                const outputUrl = outputUrlInput.value;
+                const textArea = document.createElement("textarea");
+                textArea.value = outputUrl;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand("copy");
+                document.body.removeChild(textArea);
+                alert("URL copied to clipboard!");
+            }
+
+            function openOutputUrl() {
+                const outputUrl = outputUrlInput.value;
+                window.open(outputUrl, "_blank");
+            }
+
+            copyButton.addEventListener("click", copyOutputUrl);
+            seeYourPageButton.addEventListener("click", openOutputUrl);
+
+            document.getElementById("update1").addEventListener("click", updateOutputUrl);
+            document.getElementById("update2").addEventListener("click", updateOutputUrl);
+            document.getElementById("update3").addEventListener("click", updateOutputUrl);
+            document.getElementById("update4").addEventListener("click", updateOutputUrl);
+        });
+    </script>
+
+
+<style>
+#abartop {
+    background: #f00;
+}
+</style>
+
+<style>
+        /* Add CSS styles for the output text box */
+        #output {
+            background-color: #f0f0f0; /* Very light background color */
+            width: 60%; /* Allow the width to adjust based on content */
+            user-select: none; /* Disable text selection with the mouse */
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            cursor: default; /* Disable cursor for text box */
+            padding: 5px; /* Add padding for highlighting */
+            border: 2px solid #ddd; /* Add a border for highlighting */
+            border-radius: 5px; /* Add border-radius for highlighting */
+        }
+    </style>
+
+
+<style>
+        .output-box {
+            width: 90%;
+            padding: 10px;
+            margin: 20px auto;
+            overflow: hidden;
+            position: absolute; left: 15%;
+        }
+        .output-box input[type="text"] {
+            width: 90%;
+            border: 1px grey;
+            font-size: 14px;
+            padding: 5px;
+        }
+
+        
+        input[type="text"] {
+           height: 35px; 
+           font-size: 16px;
+           border: 1px solid #ccc;
+           border-radius: 5px;
+        }
+
+        input[type="text"]::placeholder {
+          font-size: 19px;
+          color:#131313;
+        }
+
+        button#update1,
+        button#update2,
+        button#update3,
+        button#update4 {
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 20px;
+        background-color: #0096FF; /* Button background color */
+        color: #fff; /* Button text color */
+        cursor: pointer;  }
+
+        #copy-button,
+        #see-your-page-button {
+            margin: 10px; /* Add margin for spacing */
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 20px;
+            background-color: #0096FF; /* Button background color */
+            color: #fff; /* Button text color */
+            cursor: pointer; 
+            position: relative; left: 30%;}
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="pageBackground" style="background: rgb(2, 70, 90); opacity: 1; transform: scale(1.01);" data-position="50% 50%"> 
+<div class="pageBackgroundOverlay" style data-bright="0"></div></div>
+<div class="formctr" style="padding-left: 0px; padding-right: 0px;"> <form autocomplete="off" action id name method="post"> 
+<div class="contentBackground" style="width: 1202.87px; margin-top: 0vw; border: 1px solid rgb(255, 255, 0); border-radius: 4px; box-shadow: rgb(255, 229, 153) 0px 0px 13px 4px; margin-bottom: 0vw;"> 
+<div class="rowCtn divCtn divDrp fsRow  ee " style="height: 779px;  " data-rowtype="fs" data-bottom="41"><p class="rowBgOverlay" style="background: rgb(244, 244, 243);"></p><p class="rowBgBright" style></p>
+<div data-ll="i" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 42px; left: 50px; width: 1105px; height: 246px; z-index: 1; font-size: 0px;" data-lk="0"><article><img src="https://imgallery.llsvr.com/5edfb9ac9e6a1.jpg" style="width: 100%; height: 100%; object-fit: cover; object-position: 100% 0%; filter: blur(0px); opacity: 1; border: 7px groove rgb(237, 217, 158); box-shadow: rgb(6, 58, 30) 0px 0px 10px 5px;" data-tab="5"><p style="width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; border: 7px groove rgb(237, 217, 158);" data-bright="0"></p></article></div>
+<div data-ll="t" class="elemCtn elemDrp lllk " style="box-sizing: border-box; position: absolute; top: 86px; left: 165px; background: transparent; font-family: Acme; font-size: 116px; z-index: 1; line-height: 1.2; color: rgb(255, 255, 0); width: 580px; height: auto; text-shadow: rgb(132, 1, 1) 5px 10px 11px;" data-lk="0" data-rotate="-5"><article style="transform: rotate(-5deg) skew(0deg);"><p style="text-align: center;">EasyBuilder</p></article></div>
+<div data-ll="i" class="elemCtn elemDrp lllk " style="box-sizing: border-box; position: absolute; top: 231px; left: 270px; width: 405px; height: 17px; z-index: 1; font-size: 0px;" data-lk="0" data-rotate="-5"><article style="transform: rotate(-5deg) skew(0deg);"><img src="https://imgallery.llsvr.com/5eef1275b70bc.png" style="width: 100%; height: 100%; object-fit: fill; object-position: 50% 50%; box-shadow: rgba(138, 0, 0, 0.34) 0px 0px 7px 0px; filter: blur(0px);" data-tab="6"><p style="width:100%; height:100%; position: absolute; top: 0; left: 0;" data-bright="0"></p></article></div>
+<div data-ll="t" class="elemCtn elemDrp lllk " style="box-sizing: border-box; position: absolute; top: 338px; left: -25px; background: transparent; font-family: Cabin; font-size: 37px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 1250px; height: auto; text-shadow: rgb(176, 251, 176) 6px 3px 12px;" data-lk="0"><article><p style="text-align: center;"><strong>Within next <span style="color: #c9302c; border-bottom: 2px solid;">30min</span>, You could be Setup for</strong></p></article></div>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 407px; left: -25px; background: transparent; font-family: Oswald; font-size: 44px; z-index: 1; line-height: 1.2; color: rgb(1, 36, 67); width: 1250px; height: auto; text-shadow: rgb(244, 244, 20) 4px 4px 2px;" data-lk="0"><article><p style="text-align: center;"><strong>4 Premium Traffics + Monthly Recurring Income</strong></p></article></div>
+<div data-ll="b" class="elemCtn elemDrp lllk " style="box-sizing: border-box; height: 115px; left: 160px; position: absolute; top: 489px; width: 885px; z-index: 1; border-radius: 0px;" data-lk="0"><article><p style="box-sizing: border-box; background: rgb(7, 63, 111); height: 100%; width: 100%; position: absolute; top: 0px; opacity: 0.5; border: 6px solid rgb(67, 65, 65); box-shadow: rgba(0, 0, 0, 0.34) 0px 0px 7px 1px; border-radius: 1px; left: 0px;"></p></article></div>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 498px; left: -27px; background: transparent; font-family: Cabin; font-size: 37px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 1255px; height: auto; text-shadow: rgb(49, 7, 7) 2px 2px 3px;" data-lk="0"><article><p style="text-align: center;"><strong><span style="color: #6efafa;"> Start your<span style="color: #ccffff;"> One-Page Earning Machine</span></span></strong></p><p style="text-align: center;"><strong><span style="color: #6efafa;"><span style="color: #ffffff;">You will get <span style="color: #ffff99;">THIS PAGE</span> with your Links Embedded</span></span></strong></p></article></div>
+<div data-ll="b" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; height: 95px; left: 275px; position: absolute; top: 643px; width: 655px; z-index: 1; border-radius: 0px;" data-lk="0"><article><p style="box-sizing: border-box; background: rgb(18, 98, 121); height: 100%; width: 100%; position: absolute; top: 0px; opacity: 0.5; border: medium; box-shadow: rgba(0, 0, 0, 0.34) 0px 0px 7px 1px; border-radius: 30px; left: 0px;"></p></article></div>
+<div data-ll="t" class="elemCtn elemDrp lllk " style="box-sizing: border-box; position: absolute; top: 650px; left: -30px; background: transparent; font-family: Cabin; font-size: 64px; z-index: 1; line-height: 1.2; color: rgb(248, 248, 37); width: 1255px; height: auto; text-shadow: rgb(116, 27, 71) 10px 7px 11px;" data-lk="0"><article><p style="text-align: center;"><strong><span style="color: #ccffff;">using This<span style="color: #ffff99;"> FREE</span> Page</span></strong></p></article></div></div>
+<div class="rowCtn divCtn divDrp fsRow  ee " style="height: 764px;  " data-rowtype="fs" data-bottom="20"><p class="rowBgOverlay" style="background: rgb(255, 252, 252);"></p><p class="rowBgBright" style="background:;"></p>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 33px; left: 83px; background: transparent; font-family: Cabin; font-size: 40px; z-index: 1; line-height: 1.2; color: rgb(248, 248, 37); width: 725px; height: auto; text-shadow: none;" data-lk="0"><article><p style="text-align: left;"><strong><span style="color: #ccffff;"><span style="color: #000080; border-bottom: 2px solid;">How much FREE Traffic Costs:</span><br></span></strong></p></article></div>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 114px; left: 83px; background: transparent; font-family: Roboto; font-size: 25px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 1035px; height: auto; text-shadow: none;" data-lk="0"><article><p style="text-align: justify;">Chasing free traffic is honestly about the worst possible use of your time I can imagine.</p><p style="text-align: justify;">Quality issues aside,<strong> free traffic usually ends up being more expensive than paid traffic</strong>!</p><p style="text-align: justify;">Your time is precious, and as a business owner, almost anything is going to be a better use of your time.</p><p style="text-align: justify;">If you're spending hours-on-end trying to generate free traffic, and you're not factoring in your time as a very real expense, then you're making a major mis-calculation.</p><p style="text-align: justify;">Next time you're doing any of this, put a price of just $25/hour on your time and divide the number of ACTIONS your traffic surfing generated... optins or sales... and see just how much you actually pay for each one.</p><p style="text-align: justify;">Most people will find they have to surf for an hour or more to get enough clicks to generate a single opt-in.</p><p style="text-align: justify;">An actual sale might take 3-4 hours of this busy-work...</p><p style="text-align: justify;">So that opt-in is costing $25 and the sale could cost you as much as a $100!</p><p style="text-align: justify;">So together that's more than you'd pay for an entire year of traffic from any of the <strong>premium traffic services I'm about to share with you</strong>!</p><p style="text-align: justify;">And spoiler alert... You can get these fully funded and in time, turn them into<strong> 4 standalone passive income streams</strong>.</p><p style="text-align: justify;">If that sounds like a better plan, then stop all your busy-work for for 10 minutes and give <span style="color: #000000;">me your full attention.</span></p><p style="text-align: justify;"><span style="color: #ffffff;">...</span></p><p style="text-align: justify;"><span style="border-bottom: 2px solid; color: #c9302c;"><strong>That's why I would rather pay for traffic and use that time to acutally grow my business.</strong></span></p></article></div></div>
+<div class="rowCtn divCtn divDrp fsRow  ee " style="height: 917px;  " data-rowtype="fs" data-bottom="33"><p class="rowBgOverlay" style="background: rgb(246, 251, 244);"></p><p class="rowBgBright" style="background:;"></p>
+<div data-ll="t" class="elemCtn elemDrp  " style="box-sizing: border-box; position: absolute; top: 26px; left: 83px; background: transparent; font-family: Cabin; font-size: 40px; z-index: 1; line-height: 1.2; color: rgb(248, 248, 37); width: 815px; height: auto; text-shadow: none;" data-lk="0"><article><p style="text-align: left;"><strong><span style="color: #ccffff;"><span style="color: #000080; border-bottom: 2px solid;">How to benefit from Premium Traffic :</span><br></span></strong></p></article></div>
+<div data-ll="t" class="elemCtn elemDrp  " style="box-sizing: border-box; position: absolute; top: 106px; left: 87px; background: transparent; font-family: Roboto; font-size: 24px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 1030px; height: auto; text-shadow: none;" data-lk="0"><article><p style="text-align: justify;"><strong>Premium Traffic</strong> !! !!  This is super-simple on so many levels.</p><p style="text-align: justify;">By the time you read through this page you'll see how with a few easy steps you can set up ongoing, hands-free traffic.</p><p style="text-align: justify;">You can literally switch it on in the next few minutes and have high quality buyer traffic hitting your offers today.</p><p style="text-align: justify;">And if you follow the strategy shown here, you could have it<strong> fully funded within a week or two</strong>...</p><p style="text-align: justify;">And be earning a growing volume of recurring commissions after that.</p><p style="text-align: justify;"><span style="color: #ffffff;">.</span></p><p>So below you'll find<strong> 4 Premium Traffic Services.</strong></p><p>Each delivers 100% hands-free traffic to your offer, 24/7, for as long as you remain a subscriber.</p><p>They aren't free but they aren't expensive either. All three are less than $10 a month.</p><p>Here's the kicker though...</p><p>Each of these programs will pay you 50% commission on all referrals, forever.</p><p>And the way we're going to set this up, you're almost guaranteed to get your first couple of referrals really fast... so before you know it, you'll have your very own<strong> fully-funded Automatic Traffic + Income System!</strong></p><p><span style="color: #ffffff;">.</span></p><p><span style="border-bottom: 2px solid;"><strong>How can I be so confident?</strong></span></p><p><span style="color: #ffffff;">.</span></p><p>Simple... we're going to set it up so the first place you send your premium traffic, is a page just like this, that will get you those initial referrals and start growing your recurring commission income.</p><p>Then as things take off, you can start to redirect more of that traffic to your other offers... and this Automatic Traffic System will continue to grow in the background. Totally hands-free and virtually unstoppable.</p><p><span style="color: #ffffff;">.</span></p><p><span style="border-bottom: 2px solid; color: #ac2925;"><strong>So if that sounds worth 1-2 hr of your time, Lets Compelete this in 4 Steps !!!</strong></span></p></article></div></div>
+<div class="rowCtn divCtn divDrp fsRow  ee " style="height: 848px;  " data-rowtype="fs" data-bottom="30"><p class="rowBgOverlay" style="background: rgb(255, 252, 252);"></p><p class="rowBgBright" style="background:;"></p>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 25px; left: 90px; background: transparent; font-family: Cabin; font-size: 40px; z-index: 1; line-height: 1.2; color: rgb(248, 248, 37); width: 885px; height: auto; text-shadow: none;" data-lk="0"><article><p style="text-align: left;"><span style="color: #850a05;"><strong><span style="color: #000000;">Step 1</span>. Activate Your ROTATOR Traffic Services</strong></span></p></article></div>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 103px; left: 95px; background: transparent; font-family: Roboto; font-size: 25px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 1010px; height: auto; text-shadow: none;" data-lk="0"><article><p>Open each of the sites below and set up your accounts. If you don't have the funds for all three, just do it for as many you can do for now, add the others as quickly as possible.</p></article></div>
+
+
+
+<div data-ll="fb" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; padding: 0px; position: absolute; top: 230px; left: 110px; z-index: 1; width: 275px; height: 175px;" data-lk="0">
+<p>
+<button type="button" style="box-sizing: border-box; padding: 6px 12px; width: 100%; min-height: 160px; overflow: hidden; box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); font-size: 23px; line-height: 1.2; border-radius: 4px; border: medium; border: 2px solid brown; background-color: rgb(24, 115, 24); font-weight: bold; color: rgb(255, 255, 255); font-family: Roboto;" name="The ClickEngine" value="https://warriorplus.com/o2/a/pbyg3j/0" onclick="openUrl(this);">The ClickEngine</button>
+</p></div>
+
+<div data-ll="fb" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; padding: 0px; position: absolute; top: 230px; left: 460px; z-index: 1; width: 275px; height:175px;" data-lk="0">
+<p>
+<button type="button" style="box-sizing: border-box; padding: 6px 12px; width:100%; min-height: 160px; overflow: hidden; box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); font-size: 23px; line-height: 1.2; border-radius: 4px; border: medium; border: 2px solid brown; background-color: rgb(400, 150, 10); font-weight: bold; color: rgb(255, 255, 255); font-family: Roboto;" name="EzClixBuyer Club" value="https://warriorplus.com/o2/a/ht2pjj/0" onclick="openUrl(this);">EzClixBuyer Club</button>
+</p></div>
+
+<div data-ll="fb" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; padding: 0px; position: absolute; top: 230px; left: 810px; z-index: 1; width: 275px; height: 175px;" data-lk="0">
+<p>
+<button type="button" style="box-sizing: border-box; padding: 6px 12px; width:100%; min-height: 160px; overflow: hidden; box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); font-size: 22px; line-height: 1.2; border-radius: 4px; border: medium; border: 2px solid brown; background-color: rgb(0, 0, 150); font-weight: bold; color: rgb(255, 255, 255); font-family: Roboto;" name="ClickTraffic Cyclone" value="https://warriorplus.com/o2/a/f5xqc8/0" onclick="openUrl(this);">ClickTraffic Cyclone</button>
+</p></div>
+
+<div data-ll="fb" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; padding: 0px; position: absolute; top: 460px; left: 290px; z-index: 1; width: 275px; height: 175px;" data-lk="0">
+<p>
+<button type="button" style="box-sizing: border-box; padding: 6px 12px; width:100%; min-height: 160px; overflow: hidden; box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); font-size: 23px; line-height: 1.2; border-radius: 4px; border: medium; border: 2px solid brown; background-color: rgb(240, 130, 2400); font-weight: bold; color: rgb(255, 255, 255); font-family: Roboto;" name="TrafficBlaster Pro" value="https://warriorplus.com/o2/a/czl1tv/0" onclick="openUrl(this);">TrafficBlaster Pro</button>
+</p></div>
+
+<div data-ll="fb" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; padding: 0px; position: absolute; top: 460px; left: 640px; z-index: 1; width: 275px; height: 175px;" data-lk="0">
+<p>
+<button type="button" style="box-sizing: border-box; padding: 6px 12px; width:100%; min-height: 160px; overflow: hidden; box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); font-size: 22px; line-height: 1.2; border-radius: 4px; border: medium; border: 2px solid red; background-color: rgb(134,77,5); font-weight: bold; color: rgb(255, 255, 255); font-family: Roboto;" name="ClickTraffic Cyclone" value="https://sendbuyers.com/?aff=138&src=EasyBuilderPage" onclick="openUrl(this);">Send Buyers Traffic</button>
+</p></div>
+
+
+
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 701px; left: 569px; background: transparent; font-family: Nunito; font-size: 24px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 570px; height: auto; text-shadow: none;" data-lk="0"><article><p>(How to Complete Your Purchase:<strong><a href="https://player.vimeo.com/video/866761088?h=a3a6f46c3c" target="_blank" rel="noopener"> See Help Video</a>)</strong></p></article></div>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 763px; left: 90px; background: transparent; font-family: Roboto; font-size: 23px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 1035px; height: auto; text-shadow: none;" data-lk="0"><article><p><span style="border-bottom: 2px solid; color: #ac2925;"><strong>To Embedd your own Affiliate links here</strong></span>: <strong>See STEP3 of this Page.</strong></p><p>But there's a couple of steps you need to complete first to avoid going back-and-forth too much...</p></article></div>
+
+</div>
+
+
+
+<div class="rowCtn divCtn divDrp fsRow  ee " style="height: 1036px;  " data-rowtype="fs" data-bottom="40"><p class="rowBgOverlay" style="background: rgb(246, 251, 244);"></p><p class="rowBgBright" style="background:;"></p>
+<div data-ll="t" class="elemCtn elemDrp   lllk" style="box-sizing: border-box; position: absolute; top: 31px; left: 91px; background: transparent; font-family: Cabin; font-size: 40px; z-index: 1; line-height: 1.2; color: rgb(248, 248, 37); width: 615px; height: auto; text-shadow: none;" data-lk="0"><article><p style="text-align: left;"><span style="color: #850a05;"><strong><span style="color: #000000;">Step 2</span>. Get your 4 Affiliate Links<br></strong></span></p></article></div>
+<div data-ll="t" class="elemCtn elemDrp   lllk" style="box-sizing: border-box; position: absolute; top: 102px; left: 96px; background: transparent; font-family: Roboto; font-size: 25px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 1020px; height: auto; text-shadow: none;" data-lk="0"><article><p>Next step is to login to WarriorPlus and request approval to promote these Traffic services. They offer 50% commissions each, recurring monthly, paid directly to you by WarriorPlus.</p></article></div>
+<div data-ll="t" class="elemCtn elemDrp   lllk" style="box-sizing: border-box; position: absolute; top: 188px; left: 254px; background: transparent; font-family: Cabin; font-size: 33px; z-index: 1; line-height: 1.2; color: rgb(248, 248, 37); width: 675px; height: auto; text-shadow: none;" data-lk="0"><article><p style="text-align: center;"><span style="color: #850a05;"><strong><a href="https://warriorplus.com/" target="_blank" rel="noopener"><span style="color: #0000ff;">Start Free WarriorPLus Account Here</span></a><br></strong></span></p></article></div>
+<div data-ll="t" class="elemCtn elemDrp   lllk" style="box-sizing: border-box; position: absolute; top: 266px; left: 98px; background: transparent; font-family: Roboto; font-size: 25px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 1015px; height: auto; text-shadow: none;" data-lk="0"><article><p>If you don't have an account you can create a FREE account now.</p><p><span style="color: #ffffff;">.</span></p><p>Then just login and look for the '<strong>Affiliates</strong>' link in the top menu.</p><p>Click on that and look for '<strong>Offers</strong>' in the drop down menu.</p><p>On that page, look for each of these Traffic Rotator programs listed.</p><p>Just click on the program name and the affiliate information page will open.</p><p>If you purchased already, then there'll be a button for you to<strong> GET LINK</strong>.</p><p>Click on that and the link will be revealed. Copy your AFFILIATE LINK to a safe place.</p><p><span style="color: #ffffff;">.</span></p><p>If you haven't purchased yet, the button will say '<strong>Request Approval</strong>' instead.</p><p>Click on that and you can enter a message to the Vendor and request approval.</p><p><span style="color: #ffffff;">.</span></p><p style="text-align: right;">(How to get affiliate link:<strong><a href="https://player.vimeo.com/video/866765729?h=bc171be322" target="_blank" rel="noopener"> See Help Video</a></strong>)</p><p><span style="color: #ffffff;">.</span></p><p>Most Vendors use those messages as a way to filter out bot traffic... so no message from you will usually mean no approval from them!</p><p>Make sure you use the message to demonstrate that you are a legit affiliate marketer who plans to promote their product responsibly to a quality audience.</p><p>Give a few examples of where you plan to promote... your blog or social media, YouTube channels, mailing lists.</p><p>Tell them you plan to purchase as soon as possible, but you'd like to get started promoting immediately to offset the cost.</p><p><span style="color: #ffffff;">.</span></p><p><span style="border-bottom: 2px solid; color: #ac2925;"><strong>While you wait for approval, you can continue with this page set up...</strong></span></p></article></div></div>
+<div class="rowCtn divCtn divDrp fsRow  ee " style="height: 1080px;  " data-rowtype="fs" data-bottom="30"><p class="rowBgOverlay" style="background: rgb(255, 252, 252);"></p><p class="rowBgBright" style="background:;"></p>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 37px; left: 88px; background: transparent; font-family: Cabin; font-size: 40px; z-index: 1; line-height: 1.2; color: rgb(248, 248, 37); width: 785px; height: auto; text-shadow: none;" data-lk="0"><article><p style="text-align: left;"><span style="color: #850a05;"><strong><span style="color: #000080;">Step 3</span>. Enter your Affiliate Links in this Page!<br></strong></span></p></article></div>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 111px; left: 90px; background: transparent; font-family: Roboto; font-size: 25px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 1010px; height: auto; text-shadow: none;" data-lk="0"><article><p>This system works when you give your referrals an easy and effective way to duplicate what you've done. So please make a copy of this page...</p><p><span style="color: #ffffff;">.</span></p><p>If you've got a Blog/Website you can just copy-and-paste everything, Change all links to your WarriorPlus Affiliate Links obtained in Step 2 above, and edit this page contents to suit you.</p><p><span style="color: #ffffff;">.</span></p><p style="text-align: center;">Otherwise:-</p><p style="text-align: center;"><span style="border-bottom: 2px solid; color: #ff6600;"><strong>Enter your Affiliate Links below & Get a Copy of this page with your Links Embedded:</strong></span></p></article></div>
+<div data-ll="b" class="elemCtn elemDrp  " style="box-sizing: border-box; height: 650px; left: 88px; position: absolute; top: 405px; width: 1020px; z-index: 1; border-radius: 0px;" data-lk="0"><article><p style="box-sizing: border-box; background: rgba(140, 164, 184, 0.1); height: 100%; width: 100%; position: absolute; top: 0px; border: medium; border-radius: 10px; left: 0px; opacity: 0.4; box-shadow: rgba(28, 19, 19, 0.77) 0px 0px 8px 3px;"></p></article></div>
+<div data-ll="b" class="elemCtn elemDrp  " style="box-sizing: border-box; height: 85px; left: 127px; position: absolute; top: 438px; width: 945px; z-index: 1; border-radius: 0px;" data-lk="0"><article><p style="box-sizing: border-box; background: rgb(56, 74, 89); height: 100%; width: 100%; position: absolute; top: 0px; border-radius: 20px; box-shadow: none; left: 0px;"></p></article></div>
+<div data-ll="t" class="elemCtn elemDrp  " style="box-sizing: border-box; position: absolute; top: 457px; left: 155px; background: transparent; font-family: Roboto; font-size: 20px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 920px; height: auto; text-shadow: rgb(37, 0, 0) 1px 1px 3px;" data-lk="0"><article><p><span style="color: #ffff99;"><strong>Enter your  Warriorplus Affiliate links below & Update: </strong>Eg. https://warriorplus.com/o2/a/ht2pjj/0</span></p><p><span style="color: #ffff99;"><strong>If you have not subscribed some traffic services, Leave them BLANK for now and Procceed.</strong></span></p></article></div>
+
+
+
+
+<div data-ll="t" class="elemCtn elemDrp  " style="box-sizing: border-box; position: absolute; top: 551px; left: 280px; background: transparent; font-family: Roboto; font-size: 24px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 750px; height: auto; text-shadow: none;" data-lk="0"><p>
+    <input type="text" id="inputbox1" placeholder="Your ClickEngine Link" size="60">
+        <button id="update1" type="button">Update</button>
+</p></div>
+<div data-ll="t" class="elemCtn elemDrp  " style="box-sizing: border-box; position: absolute; top: 606px; left: 280px; background: transparent; font-family: Roboto; font-size: 24px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 750px; height: auto; text-shadow: none;" data-lk="0"><p>
+    <input type="text" id="inputbox2" placeholder="Your EzClix Link" size="60">
+        <button id="update2" type="button">Update</button>
+</p></div>
+<div data-ll="t" class="elemCtn elemDrp  " style="box-sizing: border-box; position: absolute; top: 661px; left: 280px; background: transparent; font-family: Roboto; font-size: 24px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 750px; height: auto; text-shadow: none;" data-lk="0"><p>
+    <input type="text" id="inputbox3" placeholder="Your TrafficBlaster Link" size="60">
+        <button id="update3" type="button">Update</button>
+</p></div>
+<div data-ll="t" class="elemCtn elemDrp  " style="box-sizing: border-box; position: absolute; top: 719px; left: 280px; background: transparent; font-family: Roboto; font-size: 24px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 750px; height: auto; text-shadow: none;" data-lk="0"><p>
+    <input type="text" id="inputbox4" placeholder="Your TrafficCyclone Link" size="60">
+        <button id="update4" type="button">Update</button>
+ </p></div>
+<div data-ll="t" class="elemCtn elemDrp  " style="box-sizing: border-box; position: absolute; top: 780px; left: 280px; background: transparent; font-family: Roboto; font-size: 24px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 750px; height: auto; text-shadow: none;" data-lk="0"><p>
+    <input type="text" id="inputbox4" placeholder="Your SendBuyers Link" size="60">
+        <button id="update4" type="button">Update</button>
+ </p></div>
+
+
+
+<div data-ll="t" class="elemCtn elemDrp  " style="box-sizing: border-box; position: absolute; top: 870px; left: 325px; background: transparent; font-family: Roboto; font-size: 24px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 575px; height: auto; text-shadow: none;" data-lk="0"><article><p><span style="color: #ffff00;"><strong><span style="color: #000080;">Your EasyBuilder Main Page Link (This Page Link): </span><br></strong></span></p></article></div>
+
+<div data-ll="t" class="elemCtn elemDrp  " style="box-sizing: border-box; position: absolute; top: 880px; left: 2%; background: transparent; font-family: Roboto; font-size: 24px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 1030px; height: auto; text-shadow: none;" data-lk="0"><p>
+    
+<div class="output-box" id="output-box" contenteditable="false" disabled="true">
+        <input type="text" id="output-url" value="https://rjsearn.github.io/easybuilder/refer?CEG=o2/a/pbyg3j/0&EZC=o2/a/ht2pjj/0&TBP=o2/a/czl1tv/0&CTC=o2/a/f5xqc8/0" readonly>
+    </div>
+</p></div>
+
+<div data-ll="t" class="elemCtn elemDrp  " style="box-sizing: border-box; position: absolute; top: 960px; left: 17%; background: transparent; font-family: Roboto; font-size: 24px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 700px; height: auto; text-shadow: none;" data-lk="0">
+<p>
+	<button id="copy-button" type="button">Copy Your Link </button>
+	<button id="see-your-page-button" type="button">Check Your Page</button>
+</p></div>
+</div>
+
+
+<div class="rowCtn divCtn divDrp fsRow  ee  " style="height: 870px;  " data-rowtype="fs" data-bottom="40"><p class="rowBgOverlay" style="background: rgb(246, 251, 244);"></p><p class="rowBgBright" style="background:;"></p>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 33px; left: 95px; background: transparent; font-family: Cabin; font-size: 40px; z-index: 1; line-height: 1.2; color: rgb(248, 248, 37); width: 965px; height: auto; text-shadow: none;" data-lk="0"><article><p style="text-align: left;"><span style="color: #850a05;"><strong><span style="color: #000080;">Step 4</span>. Start Traffic & Your EasyBuilder is Launched!</strong></span></p></article></div>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 110px; left: 92px; background: transparent; font-family: Roboto; font-size: 25px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 1015px; height: auto; text-shadow: none;" data-lk="0"><article><p>The final step is to submit your link to each of 4 traffic services for receiving Traffic.</p><p><span style="color: #ffffff;">.</span></p><p><span style="color: #cf5402;"><strong> a) If you are not using Email List Builder, submit "EasyBuilder Main Page Link (From step 3) </strong></span></p><p style="text-align: center;"><span style="color: #ffffff;"><strong>..</strong></span></p><p><strong><span style="color: #cf5402;"> b) If you are using Email List Builder, submit Capture Page Link which Redirects to EasyBuilder Main Page Link (this page) after opt-in"...To do this, follow below 2 steps -</span><br></strong></p><p><span style="color: #ffffff;"><strong>..</strong></span></p><p style="text-align: center;"><span style="border-bottom: 2px solid; color: #3366ff;"><strong><a style="color: #3366ff;" href="https://leadsleap.com/?r=rjsearn" target="_blank" rel="noopener">Start Free LeadsLeap Account Here</a></strong></span></p><p><span style="color: #ffffff;">.</span></p><p style="text-align: center;">(Connect Email List & Redirect URL to your Capture page:<strong><a href="https://player.vimeo.com/video/883532141?h=c5959ac647" target="_blank" rel="noopener"> See Help Video</a></strong>)</p><p><span style="color: #ffffff;">.</span></p><p><span style="color: #339966;"><strong>IMPORTANT SUGGESTION</strong></span>: Once submitted to Traffic Rotator Services, It may not be easy to change Submitted link quickly, so you should always submit a <strong><span style="color: #ac2925;">TRACKING LINK</span></strong> instead. This way, You can change the inner link from your end at any time while the link given to the Traffic Rotator Service remains same.</p><p><span style="color: #ffffff;">.</span></p><p>I use Leadsleap for Tracking links. They give up to 10 links to FREE members. (How to get Tracker Link from leadsleap: <a href="https://player.vimeo.com/video/894146846?h=5a77ab43ca" target="_blank" rel="noopener"><strong>See Help Video</strong> )</a></p><p><span style="color: #ffffff;">.</span></p><p>The traffic will start coming from Traffic Rotators once your Tracking Link is added.</p><p><span style="color: #ffffff;">.</span><span style="color: #ffffff;">.</span></p><p style="text-align: center;"><span style="border-bottom: 2px solid; color: #ac2925;"><strong>OK, that's It.</strong></span></p><p style="text-align: center;"><span style="border-bottom: 2px solid; color: #ffffff;"><strong>.</strong></span></p><p style="text-align: center;"><span style="color: #ac2925; border-bottom: 2px solid;"><span style="color: #ff6600;"><strong><em>If you've done that, congratulations... you're in the very small minority of people there who will actually take action, do the work and get results they're looking for. WELL DONE</em></strong></span><strong><br></strong></span></p></article></div></div>
+<div class="rowCtn divCtn divDrp fsRow  ee " style="height: 487px;  " data-rowtype="fs" data-bottom="30"><p class="rowBgOverlay" style="background: rgb(255, 252, 252); filter: blur(0px);" data-position="50% 50%"></p><p class="rowBgBright" data-bright="0" style="filter: blur(0px); background:;"></p>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 97px; left: 92px; background: transparent; font-family: Cabin; font-size: 25px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 1010px; height: auto; text-shadow: none;" data-lk="0"><article><p>Your copy of this page is now receiving a steady flow of premium traffic from 4 quality providers.</p><p>Some of those visitors will be Members of one site who are keen to try the others... You'll earn commissions.</p><p>Some might be traffic surfers or email readers who are ready to try paid traffic... You'll earn commissions.</p><p>And some are going to copy everything that you've just done...</p><p>They'll create their own Automatic Traffic System...</p><p>They'll sign up for all three programs, will earn you both instant and ongoing commissions in all three!</p><p>And best of all, when their referrals start repeating the process as well, you'll know your referrals are onboard for life and your traffic machine becomes unstoppable!</p></article></div>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 27px; left: 92px; background: transparent; font-family: Kalam; font-size: 43px; z-index: 1; line-height: 1.2; color: rgb(1, 34, 54); width: 1005px; height: auto; text-shadow: none;" data-lk="0"><article><p><strong>Here's What's Happening ...</strong></p></article></div></div>
+<div class="rowCtn divCtn divDrp fsRow  ee " style="height: 488px;  " data-rowtype="fs" data-bottom="65"><p class="rowBgOverlay" style="background: rgb(252, 252, 252);"></p><p class="rowBgBright" style></p>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 33px; left: 70px; background: transparent; font-family: Roboto; font-size: 25px; z-index: 1; line-height: 1.2; color: rgb(74, 82, 87); width: 1065px; height: auto;" data-lk="0"><article><p><strong>Contacts for further Help:</strong></p></article></div>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 90px; left: 70px; background: transparent; font-family: Roboto; font-size: 22px; z-index: 1; line-height: 1.2; color: rgb(74, 82, 87); width: 1060px; height: auto;" data-lk="0"><article><p>For TheClickEngine just email Jeff Aman at clickenginedesk@ gmail.com 'and' theclickenginedesk@ gmail.com (Duplicate your message and send it to both email addresses.</p><p> </p></article></div>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 175px; left: 68px; background: transparent; font-family: Roboto; font-size: 22px; z-index: 1; line-height: 1.2; color: rgb(74, 82, 87); width: 1060px; height: auto;" data-lk="0"><article><p>For TrafficBlasterPro just email from "Contact Us" in Members area or in case you can't login, email shawn & gabe at shawn@ reachyourgoals.one       <a href="https://www.facebook.com/groups/trafficblaster/" target="_blank" rel="noopener"> Facebook grp: Click Here </a></p></article></div>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 260px; left: 70px; background: transparent; font-family: Roboto; font-size: 22px; z-index: 1; line-height: 1.2; color: rgb(74, 82, 87); width: 1065px; height: auto;" data-lk="0"><article><p>For EzClix just email Matt Brading at brad@ ezsitez.com</p></article></div>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 315px; left: 68px; background: transparent; font-family: Roboto; font-size: 22px; z-index: 1; line-height: 1.2; color: rgb(74, 82, 87); width: 1060px; height: auto;" data-lk="0"><article><p>For  TrafficCyclone contact support clicktrafficcyclone@ gmail.com</p></article></div>
+<div data-ll="t" class="elemCtn elemDrp lllk  " style="box-sizing: border-box; position: absolute; top: 370px; left: 68px; background: transparent; font-family: Roboto; font-size: 22px; z-index: 1; line-height: 1.2; color: rgb(74, 82, 87); width: 1060px; height: auto;" data-lk="0"><article><p>For EasyBuilder just email Rjs at earnrjs@ gmail.com (Please allow up to 24 hours).</p><p>For quick direct contact:  <a href="https://t.me/+1ITBo6n6cCpiNGZl" target="_blank" rel="noopener">Msg private Telegram group Here.</a></p></article></div></div></div> 
+<div id="hinput" style="display: none;"></div> <input type="hidden" name="srce" value="leadsleap.com" /><input type="hidden" name="pgid" value="177731" /><input type="hidden" name="tktb" value="13" /><input type="hidden" name="tkid" value="858661" /><input type="hidden" name="lluid" value="rjsearn"><input type="hidden" name="rotatorid" value="0"></form> </div>
+<div id="c"></div>
+
+<div id="sendsteedemailsent" style="display: none; position: fixed; width: 100%; height: 100%;top: 0;bottom: 0;left: 0;right: 0;padding-top: 4vw;background: rgba(0, 0, 0, 0.7); z-index: 9999999999;">
+
+<div style="text-align: center; max-width:700px; min-width: 350px; width: 85%; color:#4C4848;padding: 3vw;  margin: 2em auto 3em;border-radius: 6px; background: #fff; position: relative;">
+
+<div class="sendsteedemailsentclose" style="position: absolute;top: 0;right: 0;font-size: 24px;border: 2px solid;color: #838282;width: 30px;height: 30px;line-height: 1;padding: 2px 0 0 1px;border-radius: 15px;margin: 10px;cursor: pointer; z-index: 99999;">&#10006;</div>
+
+<div id="sendsteedemailsentctr"></div>
+</div>
+</div>
+
+<div id="sendsteedinfosent" style="display: none; position: fixed; width: 100%; height: 100%;top: 0;bottom: 0;left: 0;right: 0;padding-top: 4vw;background: rgba(0, 0, 0, 0.7); z-index: 999999999;">
+
+<div style="text-align: center; max-width:500px; min-width: 350px; width: 85%; color:#4C4848;padding: 3vw;  margin: 2em auto 3em;border-radius: 6px; background: #fff; position: relative;">
+
+<div style="position: absolute;top: 0;right: 0;font-size: 24px;border: 2px solid;color: #838282;width: 30px;height: 30px;line-height: 1;padding: 2px 0 0 1px;border-radius: 15px;margin: 10px;cursor: pointer; z-index: 99999;" onclick="document.getElementById('sendsteedinfosent').style.display = 'none';">&#10006;</div>
+
+<div style="font-size:20px; margin: 0;"> Thank you.</div>
+
+<div style="font-size:16px; margin: 1em 0;">Your information has been submitted.</div>
+</div>
+</div>
+
+<div id="jsbtm"><script src="https://llpgpro.com/jsbottom.js?v=9"></script></div>
+<script>
+if (typeof rsz === 'function') {
+} else {
+    var myScript = document.createElement('script');
+    document.getElementById("jsbtm").appendChild(myScript);
+    myScript.src = "https://llwserver.com/jsbottom.js?v=31948478944";
+}
+$(function() {
+	if(!isNaN($('form').attr('action')) && $('form').attr('action') > 0){
+		$('form').attr('action',"https://sendsteed.com/subscription/");
+		$('input[name="name"]').attr('name', 'n-2');
+		$('input[name="email"]').attr('name', 'e-2');	
+	};
+	var isAjaxing = false;
+	$('form').on('submit',function(e){
+						let url = '//llpgpro.com/ajax.php';
+			let data = new FormData();
+			data.append('action', "click");
+			data.append('pageid', llcv_d);
+			data.append('campaignid', llcv_c);
+			data.append('rotatorid', llcv_r);
+			data.append('t', statid);
+			data.append('tt', tableid);
+			data.append('ip', thisip);
+			navigator.sendBeacon(url, data);
+			$(":submit").addClass("btnclicked");
+			if($('form').attr('target') == "_blank"){
+				setTimeout(function(){ $('#sendsteedinfosent').show(); $(':submit').removeClass('btnclicked');}, 1000);
+			}
+				});
+	$(document).on("click", "button[type='button']", function(){
+			if (!navigator.sendBeacon) console.log("2");
+			if($(".formctr button[type='submit']").length) return false;
+			let url = '//llpgpro.com/ajax.php';
+			let data = new FormData();
+			data.append('action', "click");
+			data.append('pageid', llcv_d);
+			data.append('campaignid', llcv_c);
+			data.append('rotatorid', llcv_r);
+			data.append('t', statid);
+			data.append('tt', tableid);
+			data.append('ip', thisip);
+			navigator.sendBeacon(url, data);
+	});
+	$(document).on("click", ".sendsteedemailsentclose", function(){
+		$('#sendsteedemailsent').hide();
+	});
+	$("#popvideo_base").click(function(){
+		$("#popvideo_base").hide();
+		$("#popvideo_frame").html("");
+	});
+					window.parent.postMessage({"lllpgtle": document.title,"lllpgimg": "","lllpgfco": ""}, "*");
+	var imgerrorsent = 0;
+	$('.elemCtn img').one('error', function() {
+		if(imgerrorsent == 0){
+			console.log(this.src);
+			$.ajax({
+					cache: false,
+					url: "//"+llcv_dm+"/ajax.php",
+					type: "POST",
+					data: "action=imgerror&pageid=" + llcv_d + "&campaignid=" + llcv_c + "&src=" + this.src,
+					error: function(e, f, a) {},
+					success: function(a) {
+					}
+			});
+			imgerrorsent = 1;
+		}
+	}); 
+});
+</script>
+
+<div class="ifmtrk">
+<iframe style="border: none;" src="https://pixel.leadsleap.net/set.html?n1=lllpga177731&v1=858661.13&n2=lllpgb177731&v2=858661.13&n3=lllpgca161058&v3=177731.858661.13&n4=lllpgcb161058&v4=177731.858661.13"></iframe>
+</div>
+
+<div style="position: absolute; display: none; width: 1px; height: 1px; overflow: hidden;">
+</div>
+
+<div id="popvideo_base">
+
+<div id="popvideo_bg">
+
+<div id="popvideo_ctr">
+
+<div id="popvideo_frame">
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
