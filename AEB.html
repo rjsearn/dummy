@@ -28,8 +28,7 @@
             var code2 = getQueryParam("EZC");
             var code3 = getQueryParam("TBP");
             var code4 = getQueryParam("CTC");
-            var code4 = getQueryParam("SND");
-
+            var code5 = getQueryParam("SNB");
             switch (button.name) {
                 case "The ClickEngine":
                     url = code1 ? "https://warriorplus.com/" + code1 : button.value;
@@ -44,9 +43,8 @@
                     url = code4 ? "https://warriorplus.com/" + code4 : button.value;
                     break;
                 case "SendBuyers Traffic":
-                    url = code4 ? "https://sendbuyers.com/?aff=" + code4 : button.value;
+                    url = code5 ? "https://sendbuyers.com/?aff=" + code5 : button.value;
                     break;
-
                 default:
                     url = "";
             }
@@ -58,6 +56,7 @@
             return urlParams.get(name);
         }
     </script>
+
 
 
     <script>
