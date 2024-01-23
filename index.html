@@ -1,320 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Page Design</title>
-    <style>
-        body {
-            background-color: #f8f9fa;
-            color: #495057;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            padding: 0;
-            display: flex;
-            flex-direction: row;
-        }
-
-        .left-column {
-            width: 20%;
-            background-color: #f8f9fa;
-            padding: 0px;
-            box-sizing: border-box;
-            margin-top: 5%;
-            margin-right: 0px;
-            margin-left: 4%;
-        }
-
-        .left-column h2 {
-            margin-bottom: 10px;
-	    margin-left: 19%;
-            text-align: center;
-            color: #C19A6B;
-            margin-top: 2px; /* Adjust margin as needed */
-            font-family: 'Lobster', cursive; /* Set the font-family */
-            font-size: 1.3em;
-        }
-
-        .left-column button {
-            display: block;
-            width: 80%;
-            margin-left: 20%;
-            background-color: #9CB071;
-            color: white;
-            padding: 7px 5px;
-            font-size: 0.9em;
-            font-weight: bold;
-            cursor: pointer;
-            width: 80%;
-            display: table;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-
-         .left-column button:hover {
-            background-color: #009900;
-        }
-
-        .right-column {
-            background-color: #f8f9fa;
-            width: 72%;
-            padding: 0px;
-            box-sizing: border-box;
-            text-align: center;
-            margin-left: 0px;
-        }
-
-        .telegram {
-            display: inline-block;
-            background-color: #FFFACD;
-            border-radius: 7px;
-            overflow: hidden;
-            position: relative;
-            text-decoration: none;
-            padding: 1px;
-            text-decoration: none;
-            text-align: center;
-            margin-top: 10px;
-  	    margin-bottom: 5px;
-            font-weight: bold;
-	    font-size: 0.8em;
-            width: 20%;
-        }
-
-        .telegram:hover {
-            background-color: #FFAE42;
-        }
-
-        .right-column h2 {
-            text-align: center;
-            color: #C19A6B;
-            margin-top: 5px;
-	    margin-bottom: 10px;
-            font-family: 'Lobster', cursive; /* Set the font-family */
-            font-size: 1.5em;
-        }
-
-        .frame {
-            max-width: 78%;
-            max-height: 68vh;
-            margin: 0 auto;
-            overflow: hidden;
-            position: relative;
-            border: 1px solid #dee2e6;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            background-color: #ffffff;
-            border-radius: 15px;
-        }
-
-        .frame img {
-            max-width: 100%;
-            max-height: 98%;
-            object-fit: cover;
-            display: block;
-            border: 1px solid #dee2e6;
-            border-radius: 5px;
-            
-        }
-
-        .start-here-link {
-            display: inline-block;
-            text-align: center;
-            margin-top: 0px;
-	    padding: 1px;
-            font-size: 0.8em;
-            font-weight: bold;
-	    color: #0088cc;
-            text-decoration: none;
-            justify-content: center;
-            background-color: #FFF2B2;
-            width: 22%;
-            border-radius: 7px;
-        }
-	 .start-here-link:hover {
-            background-color: #FFAE42;
-        }
-
-        .buttons-container {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 0px;
-            width: 79%;
-            margin-left: 10%;
-        }
-
-        .btn-next,
-        .btn-previous {
-            padding: 6px;
-            cursor: pointer;
-            border-radius: 8px;
-            font-weight: bold;
-            font-size: 0.9em;
-	    width: 28%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	    overflow: hidden;
-	    text-align: center;
-        }
-    
-        .btn-previous:hover {
-            background-color: #FF6600;
-        } 
-
-        .btn-next:hover {
-            background-color: #009900;
-        }
-        
-
-        .btn-next {
-            background-color: #9CB071;
-            color: #fff;
-            margin-left: 56%;
-        }
-
-        .btn-previous {
-            background-color: #FFAE42;
-            color: #fff;
-            margin-left: 1%;
-        }
-
- /* Media queries for smaller screens */
-        @media only screen and (max-width: 1200px) {
-            .left-column h2,
-            .left-column button,
-	    .telegram,
-	    .right-column h2,
-            .start-here-link,
-            .btn-next,
-            .btn-previous {
-                font-size: 0.7em;
-            }
-        }
-	@media only screen and (max-width: 1000px) {
-            .left-column h2,
-            .left-column button,
-	    .telegram,
-	    .right-column h2,
-            .start-here-link,
-            .btn-next,
-            .btn-previous {
-                font-size: 0.6em;
-            }
-        }
-	@media only screen and (max-width: 800px) {
-            .left-column h2,
-            .left-column button,
-	    .telegram,
-	    .right-column h2,
-            .start-here-link,
-            .btn-next,
-            .btn-previous {
-                font-size: 0.5em;
-            }
-        }
-	@media only screen and (max-width: 600px) {
-            .left-column h2,
-            .left-column button,
-	    .telegram,
-	    .right-column h2,
-            .start-here-link,
-            .btn-next,
-            .btn-previous {
-                font-size: 0.4em;
-            }
-        }
-
-        @media only screen and (max-width: 400px) {
-            .left-column h2,
-            .left-column button,
-	    .telegram,
-	    .right-column h2,
-            .start-here-link,
-            .btn-next,
-            .btn-previous {
-                font-size: 0.2em;
-            }
-	}
-
-    </style>
+    <title>EasyBuilder Training Page</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+	<script src="script.js"></script>
 </head>
 
 <body>
-    <div class="left-column">
-        <h2 class="easybuilder-heading">EasyBuilder Steps</h2>
-            <button class="btn btn-change-content mt-3" onclick="changeContent(1)">Join WarriorPlus</button>
-            <button class="btn btn-change-content mt-3" onclick="changeContent(2)">Start ClickEngine</button>
-            <button class="btn btn-change-content mt-3" onclick="changeContent(3)">Start EzClix Club</button>
-            <button class="btn btn-change-content mt-3" onclick="changeContent(4)">Start TrafficB Pro</button>
-            <button class="btn btn-change-content mt-3" onclick="changeContent(5)">Start TraffCyclone</button>
-            <button class="btn btn-change-content mt-3" onclick="changeContent(6)">Start SendBuyers</button>
-            <button class="btn btn-change-content mt-3" onclick="changeContent(7)">Join LeadsLeap</button>
-            <button class="btn btn-change-content mt-3" onclick="changeContent(8)">Import EBMainPage</button>
-            <button class="btn btn-change-content mt-3" onclick="changeContent(9)">Import OptionPage</button>
-            <button class="btn btn-change-content mt-3" onclick="changeContent(10)">Create New EBList</button>
-            <button class="btn btn-change-content mt-3" onclick="changeContent(11)">Import SplashPage</button>
-            <button class="btn btn-change-content mt-3" onclick="changeContent(12)">Promote SplashPage</button>
-        
-    </div>
-    <div class="right-column">
-        <a class="telegram" href="https://t.me/yourTelegramLink" target="_blank"> ..Contact for Help.. </a>
-        <h2 id="imageHeading" class="text-center">Image Heading</h2>
-        
-        <div class="frame">
-            <img id="displayedImage" src="https://i.imgur.com/VgvPhWq.png" alt="Image 1">
+		<!-- LEFT MENU BAR Section -->
+		
+    <div class="main-menu">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <a style= "background-color: #6d8241; font-size: 1em; color: #faf375; font-weight: bold;">EasyBuilder Setup</a>
+        </div>
+        <ul>
+            <li>
+                <a href="wp.html">Step1: WarriorPlus</a>
+            </li>
             
-        </div>
-
-        <a class="start-here-link" href="https://yourstartlink.com" target="_blank"> .. Start Here.. </a>
-
-        <div class="buttons-container">
-            <button class="btn btn-previous float-left btn-lighter" onclick="showPreviousImage()">Previous</button>
-            <button id="nextButton" class="btn btn-next float-right btn-lighter" onclick="showNextImage()">Next Page</button>
-        </div>
-    </div>
-</body>
-
-<script src="dataModule.js"></script>
-<script>
-    let currentIndex = 0;
-    let currentSet = 0;
-
-    function showNextImage() {
-        if (currentIndex < getCurrentSetLength() - 1) {
-            currentIndex = (currentIndex + 1) % getCurrentSetLength();
-        document.getElementById("displayedImage").src = images[currentSet][currentIndex];
-        document.getElementById("imageLink").href = links[currentSet][currentIndex];
-        updateHeading();
-       }
+			<li class="parent-item">
+                <a href="tr.html">Step2: Traffic Rotators</a>
+                <ul class="sub-menu">
+                    <li><a href="trce.html">The ClickEngine</a></li>
+                    <li><a href="trez.html">EzClix Club</a></li>
+                    <li><a href="trtb.html">TrafficBlaster Pro</a></li>
+                    <li><a href="trtc.html">Traffic Cyclone</a></li>
+                    <li><a href="trsb.html">SendBuyers</a></li>
+                </ul>
+			</li>
+            
+			<li><a href="ll.html">Step3: LeadsLeap</a></li>
         
-    }
+			<li class="parent-item">
+                <a href="mp.html">Step4: EB Main Page</a>
+                <ul class="sub-menu">
+                    <li><a href="amp.html">Automated MainPage</a></li>
+                    <li><a href="lmp.html">LeadsLeap MainPage</a></li>
+                </ul>
+            </li>
+            
+			<li><a href="op.html">Step5: Options Page</a></li>
+            <li><a href="el.html">Step6: Email List</a></li>
+            <li><a href="sp.html">Step7: Splash Page </a></li>
+            <li><a href="st.html">Step8: Send Traffic</a></li>
+            <li><a href="ot.html">Step9: Other Traffics</a></li>
+			<li><a href="msc.html">Step10: Misc</a></li>
+        </ul>
+    </div>
 
-    function showPreviousImage() {
-        if (currentIndex > 0) {
-            currentIndex = (currentIndex - 1) % getCurrentSetLength();
-            document.getElementById("displayedImage").src = images[currentSet][currentIndex];
-            document.getElementById("imageLink").href = links[currentSet][currentIndex];
-            updateHeading();
-        }
-    }
+		<!-- Central MAIN Section -->
+		
+    <div class="content">
+        
+        
+    <div class="center-column">
+        <a class="telegram" href="https://t.me/+SqKLdNlUQckxNzg1" target="_blank"> ..Contact for Help.. </a>
+        <h2 id="imageHeading" class="text-heading">Start Seting up your EasyBuilder</h2>    
+		
+		<div class="frame">
+            <img id="displayedImage" src="https://i.imgur.com/VMTPTRq.png" alt="Image 1">
+        </div>
 
-    function updateHeading() {
-        document.getElementById("imageHeading").textContent = headings[currentSet][currentIndex];
-    }
+        <a class="start-here-link" href="https://warriorplus.com" target="_blank">  </a>
 
-    function changeContent(set) {
-        currentSet = set - 1;
-        currentIndex = 0;
-        document.getElementById('displayedImage').src = images[currentSet][currentIndex];
-        document.getElementById('imageLink').href = links[currentSet][currentIndex];
-        updateHeading();
-    }
+        
+    </div>
+    </div>
 
-    changeContent(1);
+		<!-- Right BANNER Section -->
+		
+    <div class="banner-column">
+        <div class="column-heading">Team Builds</div>
+        <div class="banner-frame">
+            <a href="https://llpgpro.com/RjsETB2024Plan/" target="_blank">
+			<img src="https://i.postimg.cc/7LSwpfhQ/Great-Life.gif" alt="Banner 1">
+		</div><br>
+        <div class="banner-frame">
+            <a href="https://llpgpro.com/RjsETB2024Plan/" target="_blank">
+			<img src="https://i.postimg.cc/PfZKBnhR/GDI.gif" alt="Banner 2">
+		</div><br>
+        <div class="banner-frame">
+            <a href="https://llpgpro.com/RjsETB2024Plan/" target="_blank">
+			<img src="https://i.postimg.cc/Qd9XJ63D/TBM.gif" alt="Banner 3">
+		</div>
+    </div>
 
-    function getCurrentSetLength() {
-        return images[currentSet].length;
-    }
-</script>
+
+</body>
 
 </html>
