@@ -7,32 +7,50 @@ body {
 
         .main-menu {
             background-color: #9CB071; /* Green color */
-			width: 17%;
-			padding: 20px;
+			width: 19%;
+			padding: 3px;
 			box-sizing: border-box;
 			color: white;
 			height: 100vh;
         }
 
-        .main-menu a {
-            display: block;
+
+	#mobile-menu-toggle {
+    display: none;
+}
+	.main-menu.hidden {
+    display: none; /* Initially hide the menu */
+    position: fixed;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 100%;
+        background-color: #9CB071;
+        z-index: 1000;
+        overflow-y: auto;
+        padding: 20px;
+        box-sizing: border-box;
+        color: white;
+}
+	.main-menu a {
+            		display: block;
 			color: white;
 			text-decoration: none;
-			padding: 3px 0;
+			padding: 2px 0;
 			margin: 1%;
 			margin-left: 5%;
 			font-size: 0.9em; /* Set font size for main items */
 			font-weight: bold;
-			border-radius: 4px;
+			border-radius: 3px;
         }
 
-		.main-menu ul li:hover {
+	.main-menu ul li:hover {
             background-color: #6d8241;
         }
 
         .main-menu ul {
             list-style-type: none;
-            padding: 3%;
+            padding: 2%;
             margin-bottom: 1%;
 			margin-top: 2%;
         }
@@ -41,12 +59,12 @@ body {
             color: #c0c0c0; /* Color for sub-items */
             font-size: 0.8em; /* Font size for sub-items */
             border: 1px solid #b0c08d;
-			border-radius: 9px;
+			border-radius: 7px;
 		}
 
 		.main-menu ul .sub-menu {
             display: block;
-            margin-left: 23%;
+            margin-left: 21%;
             
         }
 
@@ -176,7 +194,7 @@ body {
 
         .btn-next,
         .btn-previous {
-            padding: 9px;
+            padding: 1.5%;
             cursor: pointer;
             border-radius: 8px;
             font-weight: bold;
@@ -233,7 +251,9 @@ body {
         }
 
         .banner-frame {
-            height: 18vh;
+            aspect-ratio: 1/1;
+	    max-width: 100%;
+	    height: auto;
 			margin-top: 3%;
 			margin-bottom: 3%;
             padding: 2% 3%; /* 2% margin on all sides, 3% padding on top and bottom */
@@ -249,7 +269,7 @@ body {
 
         .banner-frame img {
             width: 100%;
-            height: 100%;
+            height: auto;
 			padding: 1%;
 			margin-top: 1%;
 			object-fit: cover; /* Maintain aspect ratio */
@@ -305,7 +325,7 @@ body {
                 font-size: 0.9em;
             }
             .center-column h2 {
-                font-size: 1em;
+                font-size: 0.9em;
             }
          }
 	@media only screen and (max-width: 800px) {
@@ -315,11 +335,10 @@ body {
 		.logo a,
 		.content,
 	    .center-column,
-	    .telegram,
+	    
 	    .frame,
 	    .frame-img,
-	    .start-here-link,
-            .buttons-container,
+	    .buttons-container,
 	    .btn-next,
             .btn-previous,
 	    .banner-column,
@@ -327,24 +346,54 @@ body {
 	    .banner-frame,
 	    .banner-subheading,
 	    .banner-frame img {
-                font-size: 0.8em;
+                font-size: 0.85em;
             }
             .center-column h2 {
                 font-size: 0.9em;
             }
          }
-	@media only screen and (max-width: 600px) {
-            .main-menu,
-	    .main-menu a,
+	     .telegram,
+	    .start-here-link{
+                font-size: 0.85em;
+            }
+
+	@media only screen and (min-width: 600px) {
+    #mobile-menu-toggle {
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+            .main-menu {
+        display: none;
+    }
+	    #mobile-menu-toggle {
+        display: block;
+    }
+	    .main-menu.hidden {
+        display: block; /* Ensure the hidden menu is visible on smaller screens */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 100%;
+        background-color: #9CB071;
+        z-index: 1000;
+        overflow-y: auto;
+        padding: 20px;
+        box-sizing: border-box;
+        color: white;
+    }	    
+	.banner-frame {
+        aspect-ratio: 1/1; /* Adjust for smaller screens */
+    }
+	.main-menu a,
 	    .logo,
 		.logo a,
 		.content,
 	    .center-column,
-	    .telegram,
 	    .frame,
 	    .frame-img,
-	    .start-here-link,
-            .buttons-container,
+	    .buttons-container,
 	    .btn-next,
             .btn-previous,
 	    .banner-column,
@@ -357,10 +406,37 @@ body {
             .center-column h2 {
                 font-size: 0.9em;
             }
-         }                
+         }       
+		.telegram,
+	    .start-here-link{
+                font-size: 0.8em;
+            }
+         
 	@media only screen and (max-width: 400px) {
-            .main-menu,
-	    .main-menu a,
+            .main-menu {
+        display: none;
+    }
+	    #mobile-menu-toggle {
+        display: block;
+    }
+	    .main-menu.hidden {
+        display: block; /* Ensure the hidden menu is visible on smaller screens */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 100%;
+        background-color: #9CB071;
+        z-index: 1000;
+        overflow-y: auto;
+        padding: 20px;
+        box-sizing: border-box;
+        color: white;
+    }
+	    .banner-frame {
+        aspect-ratio: 1/1; /* Adjust for smaller screens */
+    }
+	.main-menu a,
 	    .logo,
 		.logo a,
 		.content,
