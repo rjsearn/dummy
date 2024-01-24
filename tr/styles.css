@@ -17,14 +17,15 @@ body {
 
 	#mobile-menu-toggle {
     	display: none;
-    	font-size: 24px;
-   	 color: #333;
+    	font-size: 25px;
+   	 color: black;
    	 cursor: pointer;
    	 position: fixed;
-   	 top: 20px;
-   	 right: 20px;
+   	 top: 10px;
+   	 left: 10px;
    	 z-index: 2;
 	}
+	
 	.main-menu.hidden {
     	display: none; /* Initially hide the menu */
     	position: fixed;
@@ -286,7 +287,7 @@ body {
 
 
 /* Media queries for smaller screens */
-        @media only screen and (max-width: 1200px) {
+ @media only screen and (max-width: 1200px) {
             .main-menu,
 	    .main-menu a,
 	    .logo,
@@ -310,12 +311,13 @@ body {
                 font-size: 1em;
             }
          }
-	@media only screen and (max-width: 1000px) {
+
+@media only screen and (max-width: 1000px) {
             .main-menu,
 	    .main-menu a,
 	    .logo,
-		.logo a,
-		.content,
+	    .logo a,
+	    .content,
 	    .center-column,
 	    .telegram,
 	    .frame,
@@ -335,44 +337,68 @@ body {
                 font-size: 0.9em;
             }
          }
-	@media only screen and (max-width: 800px) {
-            .main-menu {
-        display: none;
-    }
+
+@media only screen and (max-width: 800px) {
+            
+	    .main-menu {
+        	display: none;
+	        width: 35%;
+	        top: 15px;
+    	     }
 	    #mobile-menu-toggle {
-        display: block;
-    }
+        	display: block;
+	        width: 10%;
+		background-color: #f8f9fa;
+		text-align: center;
+	    	
+   	    }
 	    .main-menu.hidden {
-        display: block; /* Ensure the hidden menu is visible on smaller screens */
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 30%;
-        height: 100%;
-        background-color: #9CB071;
-        z-index: 1000;
-        overflow-y: auto;
-        padding: 20px;
-        box-sizing: border-box;
-        color: white;
-    }	    
-	
-	.banner-frame {
-        aspect-ratio: 1/1; /* Adjust for smaller screens */
-    }
-	.main-menu a,
-	    .logo,
-		.logo a,
-		.content,
+        	display: block; /* Ensure the hidden menu is visible on smaller screens */
+        	position: fixed;
+        	margin-top: 0;
+        	left: 0;
+        	width: 100%;
+        	height: 100%;
+        	background-color: #9CB071;
+        	z-index: 1000;
+        	overflow-y: auto;
+        	padding: 15px;
+       	 	box-sizing: border-box;
+       	 	color: white;
+   	    }	    
+		.main-menu .logo {
+            	text-align: center;
+            	margin-top:30%;
+	    }
+	    	.banner-column,
+		.banner-frame,
+		.banner-subheading,
+	    	.banner-frame img {
+        	 display: none;
+		 width: 1%;
+    	    }
+
+	    .center-column {
+                float: center;
+		background-color: #f8f9fa;
+                width: 88%;
+                padding: 0px;
+                box-sizing: border-box;
+                text-align: center;
+                margin-left: 5%;
+		justify-content: center;
+		align-items: center;
+           }
+	    .main-menu a,
+	    .content,
 	    .center-column,
 	    .frame,
 	    .frame-img,
 	    .buttons-container,
 	    .btn-next,
             .btn-previous,
-	    .banner-column,
 	    .column-heading,
-	    .banner-frame,
+	    
 	    .banner-subheading,
 	    .banner-frame img {
                 font-size: 0.85em;
@@ -381,49 +407,72 @@ body {
                 font-size: 0.9em;
             }
                
-		.telegram,
+	    .telegram,
 	    .start-here-link{
                 font-size: 0.85em;
             }
           }
+
 @media only screen and (max-width: 600px) {
-            .main-menu {
-        display: none;
-    }
+             .main-menu {
+        	display: none;
+	        width: 35%;
+	        top: 15px;
+    	     }
 	    #mobile-menu-toggle {
-        display: block;
-    }
+        	display: block;
+	        width: 10%;
+		background-color: #f8f9fa;
+		text-align: center;
+	    	
+   	    }
 	    .main-menu.hidden {
-        display: block; /* Ensure the hidden menu is visible on smaller screens */
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 45%;
-        height: 100%;
-        background-color: #9CB071;
-        z-index: 1000;
-        overflow-y: auto;
-        padding: 20px;
-        box-sizing: border-box;
-        color: white;
-    }	    
-	
-	.banner-frame {
-        aspect-ratio: 1/1; /* Adjust for smaller screens */
-    }
-	.main-menu a,
-	    .logo,
-		.logo a,
-		.content,
+        	display: block; /* Ensure the hidden menu is visible on smaller screens */
+        	position: fixed;
+        	margin-top: 0;
+        	left: 0;
+        	width: 100%;
+        	height: 100%;
+        	background-color: #9CB071;
+        	z-index: 1000;
+        	overflow-y: auto;
+        	padding: 15px;
+       	 	box-sizing: border-box;
+       	 	color: white;
+   	    }	    
+		.main-menu .logo {
+            	text-align: center;
+            	margin-top:30%;
+	    }
+	    	.banner-column,
+		.banner-frame,
+		.banner-subheading,
+	    	.banner-frame img {
+        	 display: none;
+		 width: 1%;
+    	    }
+
+	    .center-column {
+                float: center;
+		background-color: #f8f9fa;
+                width: 88%;
+                padding: 0px;
+                box-sizing: border-box;
+                text-align: center;
+                margin-left: 5%;
+		justify-content: center;
+		align-items: center;
+           }
+	    .main-menu a,
+	    .content,
 	    .center-column,
 	    .frame,
 	    .frame-img,
 	    .buttons-container,
 	    .btn-next,
             .btn-previous,
-	    .banner-column,
 	    .column-heading,
-	    .banner-frame,
+	    
 	    .banner-subheading,
 	    .banner-frame img {
                 font-size: 0.8em;
@@ -437,50 +486,4 @@ body {
                 font-size: 0.8em;
             }
           }
-	@media only screen and (max-width: 400px) {
-            .main-menu {
-        display: none;
-    }
-	    #mobile-menu-toggle {
-        display: block;
-    }
-	    .main-menu.hidden {
-        display: block; /* Ensure the hidden menu is visible on smaller screens */
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 60%;
-        height: 100%;
-        background-color: #9CB071;
-        z-index: 1000;
-        overflow-y: auto;
-        padding: 20px;
-        box-sizing: border-box;
-        color: white;
-    }
-	    .banner-frame {
-        aspect-ratio: 1/1; /* Adjust for smaller screens */
-    }
-	.main-menu a,
-	    .logo,
-		.logo a,
-		.content,
-	    .center-column,
-	    .telegram,
-	    .frame,
-	    .frame-img,
-	    .start-here-link,
-            .buttons-container,
-	    .btn-next,
-            .btn-previous,
-	    .banner-column,
-	    .column-heading,
-	    .banner-frame,
-	    .banner-subheading,
-	    .banner-frame img {
-                font-size: 0.5em;
-            }
-            .center-column h2 {
-                font-size: 0.6em;
-            }
-         }
+	
