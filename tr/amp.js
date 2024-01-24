@@ -20,20 +20,11 @@ const images = [
 ];
 const links = [
 [
-"https://leadsleap.com/?r=rjsearn",
-"https://leadsleap.com/?r=rjsearn",
-"https://leadsleap.com/?r=rjsearn",
-"https://leadsleap.com/?r=rjsearn",
-"https://leadsleap.com/?r=rjsearn",
-"https://leadsleap.com/?r=rjsearn",
-"https://leadsleap.com/?r=rjsearn",
-"https://leadsleap.com/?r=rjsearn",
-"https://leadsleap.com/?r=rjsearn",
-"https://leadsleap.com/?r=rjsearn",
-"https://leadsleap.com/?r=rjsearn",
-"https://leadsleap.com/?r=rjsearn",
-"https://leadsleap.com/?r=rjsearn",
-"https://leadsleap.com/?r=rjsearn",
+"https://rjsearn.github.io/eb/refer/",
+"https://rjsearn.github.io/eb/refer/",
+"https://rjsearn.github.io/eb/refer/",
+"https://rjsearn.github.io/eb/refer/",
+"https://rjsearn.github.io/eb/refer/",
 "https://leadsleap.com/?r=rjsearn"
 ]
 ]; 
