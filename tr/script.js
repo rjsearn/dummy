@@ -38,13 +38,5 @@ let currentSet = 0;
         return images[currentSet].length;
     }
 
+ 
 
-document.addEventListener('DOMContentLoaded', function () {
-    var mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-    var mainMenu = document.querySelector('.main-menu');
-
-    mobileMenuToggle.addEventListener('click', function () {
-        // Toggle the 'hidden' class to show/hide the menu
-        mainMenu.classList.toggle('hidden');
-    });
-});

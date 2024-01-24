@@ -1,0 +1,134 @@
+const images = [
+[ // 1. Join warriorPlus
+'https://i.imgur.com/iPxV2QC.png',
+'https://i.imgur.com/Ugg9Ux3.png',
+'https://i.imgur.com/jPgTqMp.png'
+],
+[ // 2. Start The ClickEngine
+'https://i.imgur.com/Lo9Yc6M.png',
+'https://i.imgur.com/FANOSSx.png',
+'https://i.imgur.com/k08jLxS.png',
+'https://i.imgur.com/t44QOqC.png',
+'https://i.imgur.com/7xxpuDW.png',
+'https://i.imgur.com/1DikuLh.png',
+'https://i.imgur.com/NVlijlW.png',
+'https://i.imgur.com/IOCnFPO.png',
+'https://i.imgur.com/fAcyY86.png',
+'https://i.imgur.com/AVBwan2.png',
+'https://i.imgur.com/i0NLIZS.png',
+'https://i.imgur.com/Yuy3iAK.png',
+'https://i.imgur.com/jVj9TLf.png',
+'https://i.imgur.com/VyEj8IL.png'
+],
+
+[ // 3. Start EzClix Club
+'https://i.imgur.com/YNiDERk.png',
+'https://i.imgur.com/C3Eg1ej.png',
+'https://i.imgur.com/raYNJPd.png',
+'https://i.imgur.com/88UdfQf.png',
+'https://i.imgur.com/QlLb4pz.png',
+'https://i.imgur.com/ZEUhXbm.png',
+'https://i.imgur.com/PfvbMIV.png',
+'https://i.imgur.com/R1syFR4.png',
+'https://i.imgur.com/IOCnFPO.png',
+'https://i.imgur.com/HxlXTwZ.png',
+'https://i.imgur.com/amX63II.png',
+'https://i.imgur.com/OW3ybrN.png',
+'https://i.imgur.com/Pjm8j0L.png',
+'https://i.imgur.com/gSJGJvJ.png',
+'https://i.imgur.com/uP1JhH3.png'
+],
+
+[ // 4. Start TrafficBlasterPro:
+'https://i.imgur.com/IOE3VTZ.png',
+'https://i.imgur.com/VvXAPIW.png',
+'https://i.imgur.com/iPvW12x.png',
+'https://i.imgur.com/NvIDMw2.png',
+'https://i.imgur.com/jucynE2.png',
+'https://i.imgur.com/dE5EwSz.png',
+'https://i.imgur.com/KAONm7C.png',
+'https://i.imgur.com/qjKZ6lH.png'
+],
+
+
+[ // 5. Start TrafficCyclone:
+'https://i.imgur.com/3oaR5cd.png',
+'https://i.imgur.com/4z49hcN.png',
+'https://i.imgur.com/zL3hpI9.png'
+],
+
+[ // 6. Start SendBuyers:
+'https://i.imgur.com/aMj2iVH.png',
+'https://i.imgur.com/XjyjHiw.png',
+'https://i.imgur.com/hu7Oc9h.png',
+'https://i.imgur.com/TwAXhXj.png',
+'https://i.imgur.com/8oUMfvu.png',
+'https://i.imgur.com/CGSaDC2.png',
+'https://i.imgur.com/o8umb7O.png',
+'https://i.imgur.com/j4yF5qn.png'
+],
+
+[ // 7. Join Leadsleap:
+'https://i.imgur.com/QqrfSTQ.png',
+'https://i.imgur.com/67P940a.png',
+'https://i.imgur.com/WbGkbX8.png',
+'https://i.imgur.com/zdABp2K.png'
+],
+
+[ // 8. Import EB MainPage:
+"https://i.imgur.com/g50bBe5.png",
+"https://i.imgur.com/zgGN6QX.png",
+"https://i.imgur.com/zwt3gA6.png",
+"https://i.imgur.com/Dlaxbwp.png",
+"https://i.imgur.com/dnCIP7P.png",
+'https://i.imgur.com/zvsDpfM.png',
+'https://i.imgur.com/y4IFcgM.png',
+'https://i.imgur.com/K5AbaQL.png',
+'https://i.imgur.com/xMGkGcP.png',
+'https://i.imgur.com/nBhyBPk.png',
+'https://i.imgur.com/CIGTzyW.png',
+'https://i.imgur.com/bUhIF1y.png',
+'https://i.imgur.com/l8nw47q.png',
+'https://i.imgur.com/lu6ut6C.png',
+'https://i.imgur.com/RdTnwgY.png'
+],
+[ // 9. Import EBOptionPage:
+"https://i.imgur.com/vhQflkx.png",
+"https://i.imgur.com/zgGN6QX.png",
+"https://i.imgur.com/mGfgFJ4.png",
+"https://i.imgur.com/4qwXLHR.png",
+'https://i.imgur.com/0T1KrVG.png',
+'https://i.imgur.com/OpnQ0WE.png',
+'https://i.imgur.com/nuy3nfZ.png',
+"https://i.imgur.com/R5S0TID.png",
+'https://i.imgur.com/2nP80vA.png',
+'https://i.imgur.com/MnqIgVg.png'
+],
+[ // 10. Create New Email List:
+"https://i.imgur.com/u8TQoHk.png",
+"https://i.imgur.com/9IYc8qp.png",
+"https://i.imgur.com/iiuevqk.png",
+"https://i.imgur.com/Dd3RXs4.png",
+"https://i.imgur.com/tzbDNDs.png",
+"https://i.imgur.com/A9JFjKY.png",
+"https://i.imgur.com/Kssy5Wo.png",
+"https://i.imgur.com/ntSRDsM.png",
+"https://i.imgur.com/2WDQuWA.png",
+'https://i.imgur.com/6Z7U3nQ.png'
+],
+[ // 11.Import Splash Page:
+"https://i.imgur.com/8gjC9Dg.png",
+"https://i.imgur.com/qJD7UUh.png",
+"https://i.imgur.com/qK5b7tL.png",
+"https://i.imgur.com/bhUU4eq.png",
+"https://i.imgur.com/G7hvRBx.png",
+"https://i.imgur.com/VkhcKEi.png",
+"https://i.imgur.com/oFUlgl9.png",
+"https://i.imgur.com/osjTLnH.png",
+"https://i.imgur.com/hlpGdiA.png",
+"https://i.imgur.com/yyivHmh.png",
+"https://i.imgur.com/rQIq8FY.png",
+"https://i.imgur.com/hnc4uid.png",
+'https://i.imgur.com/QiYNARi.png'
+]
+];
