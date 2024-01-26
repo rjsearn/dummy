@@ -1,31 +1,13 @@
+function toggleMenu() {
+            var mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.style.display = (mobileMenu.style.display === 'none' || mobileMenu.style.display === '') ? 'block' : 'none';
+        }
 
+        window.addEventListener('click', function(e) {
+            var mobileMenu = document.getElementById('mobileMenu');
+            var mobileMenuToggle = document.getElementById('mobile-menu-toggle');
 
-document.addEventListener('DOMContentLoaded', function () {
-    // Check if the screen width is less than a certain threshold for mobile view
-    function isMobileView() {
-        return window.innerWidth < 800; // Adjust the threshold as needed
-    }
-
-    if (isMobileView()) {
-        var menuToggle = document.getElementById('mobile-menu-toggle');
-        var mainMenu = document.querySelector('.main-menu');
-
-        menuToggle.addEventListener('click', function () {
-            if (mainMenu.style.display === 'none' || mainMenu.style.display === '') {
-                mainMenu.style.display = 'block';
-            } else {
-                mainMenu.style.display = 'none';
+            if (mobileMenu.style.display === 'block' && e.target !== mobileMenu && e.target !== mobileMenuToggle && !mobileMenu.contains(e.target)) {
+                mobileMenu.style.display = 'none';
             }
-        });
-
-        // Add event listeners to menu links
-        var menuLinks = document.querySelectorAll('.main-menu a');
-
-        menuLinks.forEach(function (link) {
-            link.addEventListener('click', function () {
-                // Hide the menu after a link is clicked
-                mainMenu.style.display = 'none';
-            });
-        });
-    }
 });
