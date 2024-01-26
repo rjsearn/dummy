@@ -1,5 +1,4 @@
 const headings = [
-[
 'Setup your LeadsLeap MainPage',
 'Add a New Page',
 'Name the new Page',
@@ -11,11 +10,9 @@ const headings = [
 'Update your other 4 Traffic Affiliate links',
 'Your LeadsLeap MainPage link is ready',
 'Save anyone of the 2 Links',
-'Go to Next Step'
-],
+'Go to Next Step',
 ];
 const images = [
-[
 "https://i.imgur.com/lxETeuA.png",
 "https://i.imgur.com/zgGN6QX.png",
 "https://i.imgur.com/zwt3gA6.png",
@@ -27,11 +24,9 @@ const images = [
 'https://i.imgur.com/xMGkGcP.png',
 'https://i.imgur.com/nBhyBPk.png',
 'https://i.imgur.com/CIGTzyW.png',
-'https://i.imgur.com/rikzdIQ.png'
-],
+'https://i.imgur.com/rikzdIQ.png',
 ];
 const links = [
-[
 "https://leadsleap.com/?r=rjsearn",
 "https://leadsleap.com/?r=rjsearn",
 "https://leadsleap.com/?r=rjsearn",
@@ -43,6 +38,5 @@ const links = [
 "https://leadsleap.com/?r=rjsearn",
 "https://leadsleap.com/?r=rjsearn",
 "https://leadsleap.com/?r=rjsearn",
-"https://leadsleap.com/?r=rjsearn"
-]
+"https://leadsleap.com/?r=rjsearn",
 ]; 

@@ -1,33 +1,30 @@
 const headings = [
-[
-'Start Traffic to your Setup',
-'Submit EB SplashPage link to ClickEngine',
-'Submit EB SplashPage link to EzClix Club',
-'Submit EB SplashPage link to TrafficBlaster',
-'Submit EB SplashPage link to TrafficCyclone',
-'Submit EB SplashPage link to SendBuyers',
-'Happy Hands-Free Earnings'
-],
+'Start Rotator Traffic to your Setup',
+'Submit EB SplashPage to ClickEngine',
+'Submit EB SplashPage to EzClix Club',
+'Submit EB SplashPage to TrafficBlaster',
+'Submit EB SplashPage to TrafficCyclone',
+'Submit EB SplashPage to SendBuyers',
+'Happy Hands-Free Earnings',
+'Like to Scale up EasyBuilder Earnings?',
 ];
 const images = [
-[
-"https://i.imgur.com/Byw4y4q.png",
-"https://i.imgur.com/kj1fLwH.png",
-"https://i.imgur.com/zgebHrg.png",
-"https://i.imgur.com/bmahjru.png",
-"https://i.imgur.com/RsAr7fs.png",
-"https://i.imgur.com/ALG02Fu.png",
-"https://i.imgur.com/CEUYXHN.png"
-],
+"https://i.imgur.com/KyodBtM.png",
+"https://i.imgur.com/70qyzRa.png",
+"https://i.imgur.com/pg2rnWK.png",
+"https://i.imgur.com/lsWU8Wi.png",
+"https://i.imgur.com/ggNbcXd.png",
+"https://i.imgur.com/9mz5sHe.png",
+"https://i.imgur.com/CYdz4hw.png",
+'https://i.imgur.com/wtQhahD.png',
 ];
 const links = [
-[
 "https://warriorplus.com/o2/a/pbyg3j/0",
 "https://warriorplus.com/o2/a/pbyg3j/0",
 "https://warriorplus.com/o2/a/ht2pjj/0",
 "https://warriorplus.com/o2/a/czl1tv/0",
 "https://warriorplus.com/o2/a/f5xqc8/0",
 "https://sendbuyers.com/?aff=138&src=EB",
-"https://sendbuyers.com/?aff=138&src=EB"
-]
+"https://sendbuyers.com/?aff=138&src=EB",
+"https://warriorplus.com/o2/a/ht2pjj/0",
 ]; 

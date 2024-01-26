@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EasyBuilder Training Page</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<script src="trce.js"></script>
-	<script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyBuilder Training Page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" as="style" onload="this.rel='stylesheet'">
+  <script src="trce.js"></script>
+  <script src="script.js"></script>
 </head>
-
 <body>
-<div id="mobile-menu-toggle">&#9776;</div>
-		<!-- LEFT MENU BAR Section -->
-		
+  
+	<div id="mobile-menu-toggle">&#9776;</div>
+
+	<!-- LEFT MENU BAR Section -->
+	
     <div class="main-menu">
         <div class="logo">
             <img src="logo.png" alt="Logo">
@@ -47,29 +48,28 @@
 			<li><a href="op.html">Step5: Options Page</a></li>
             <li><a href="el.html">Step6: Email List</a></li>
             <li><a href="sp.html">Step7: Splash Page </a></li>
-            <li><a href="st.html">Step8: Send Traffic</a></li>
-            <li><a href="ot.html">Step9: Other Traffics</a></li>
-			<li><a href="msc.html">Step10: Misc</a></li>
+            <li><a href="tl.html">Step8: Tracker link</a></li>
+            <li><a href="st.html">Step9: Send Traffic</a></li>
+			<li><a href="sup.html">Step10: Scale Up Income</a></li>
         </ul>
     </div>
 
 		<!-- Central MAIN Section -->
 		
     <div class="content">
-        
-        
+         
     <div class="center-column">
         <a class="telegram" href="https://t.me/+SqKLdNlUQckxNzg1" target="_blank"> ..Contact for Help.. </a>
-        <h2 id="imageHeading" class="text-heading">Start The ClickEngine Subscription </h2>    
+        <h2 id="imageHeading" class="text-heading">Start The ClickEngine Subscription</h2>    
 		
 		<div class="frame">
-            <img id="displayedImage" src="https://i.imgur.com/Lo9Yc6M.png" alt="Image 1">
+            <img id="imageDisplay" src="https://i.imgur.com/Lo9Yc6M.png" alt="Displayed Image">
         </div>
 
         <a class="start-here-link" href="https://warriorplus.com/o2/a/pbyg3j/0" target="_blank"> ... Start Here Now ... </a>
-
-        <div class="buttons-container">
-            <button class="btn btn-previous float-left btn-lighter" onclick="showPreviousImage()">Previous</button>
+	
+		<div class="buttons-container">
+            <button id="previousButton" class="btn btn-previous float-left btn-lighter" onclick="showPreviousImage()">Previous</button>
             <button id="nextButton" class="btn btn-next float-right btn-lighter" onclick="showNextImage()">Next Page</button>
         </div>
     </div>
@@ -96,5 +96,4 @@
 
 <script src="mobile.js"></script>
 </body>
-
 </html>

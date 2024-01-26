@@ -1,6 +1,5 @@
 const headings = [
-[
-'Start TrafficBlaster Subscription',
+'Start EzClix Club Subscription',
 'Start from Anywhere',
 'Complete your Subscription',
 'Complete your Subscription',
@@ -14,11 +13,9 @@ const headings = [
 'Write Request for Affiliate Link',
 'Save your EZ AffiliateLink',
 'Save your EZ AffiliateLink',
-'Go to Next Traffic Rotator'
-],
+'Go to Next Traffic Rotator',
 ];
 const images = [
-[
 'https://i.imgur.com/YNiDERk.png',
 'https://i.imgur.com/88UdfQf.png',
 'https://i.imgur.com/C3Eg1ej.png',
@@ -33,11 +30,9 @@ const images = [
 'https://i.imgur.com/OW3ybrN.png',
 'https://i.imgur.com/Pjm8j0L.png',
 'https://i.imgur.com/gSJGJvJ.png',
-'https://i.imgur.com/o5JxTLD.png'
-],
+'https://i.imgur.com/o5JxTLD.png',
 ];
 const links = [
-[
 "https://warriorplus.com/o2/a/ht2pjj/0",
 "https://warriorplus.com/o2/a/ht2pjj/0",
 "https://warriorplus.com/o2/a/ht2pjj/0",
@@ -52,6 +47,5 @@ const links = [
 "https://warriorplus.com/o2/a/ht2pjj/0",
 "https://warriorplus.com/o2/a/ht2pjj/0",
 "https://warriorplus.com/o2/a/ht2pjj/0",
-"https://warriorplus.com/o2/a/ht2pjj/0"
-]
+"https://warriorplus.com/o2/a/ht2pjj/0",
 ]; 

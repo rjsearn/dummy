@@ -1,48 +1,54 @@
-let currentIndex = 0;
-let currentSet = 0;
+    let currentIndex = 0;
+
+    // Function to display the current image, heading, and link
+    function displayCurrentImage() {
+      const imageDisplay = document.getElementById("imageDisplay");
+      const imageHeading = document.getElementById("imageHeading");
+      const startHereLink = document.querySelector(".start-here-link");
+      const previousButton = document.getElementById("previousButton");
+
+      imageDisplay.src = images[currentIndex];
+      imageHeading.innerText = headings[currentIndex];
+      startHereLink.href = links[currentIndex];
+
+      // Check if it's the first image and hide the previous button
+      if (currentIndex === 0) {
+        previousButton.style.display = "none";
+      } else {
+        previousButton.style.display = "inline-block";
+      }
+
+      // Check if it's the last image and hide the next button
+      const nextButton = document.getElementById("nextButton");
+      if (currentIndex === images.length - 1) {
+        nextButton.style.display = "none";
+      } else {
+        nextButton.style.display = "inline-block";
+      }
+    }
 
   function showNextImage() {
-    if (currentIndex < getCurrentSetLength() - 1) {
-        currentIndex = (currentIndex + 1) % getCurrentSetLength();
-    } else {
-        // If the current image is the last one, hide the "Next Page" button
-        document.getElementById("nextButton").style.display = "none";
+      if (currentIndex < images.length - 1) {
+        currentIndex++;
+        displayCurrentImage();
+      }
     }
 
-    document.getElementById("displayedImage").src = images[currentSet][currentIndex];
-    document.querySelector(".start-here-link").href = links[currentSet][currentIndex];
-    updateHeading();
-}
-
-function showPreviousImage() {
-    // Always show the "Next Page" button when going back to a previous image
-    document.getElementById("nextButton").style.display = "block";
-
-    if (currentIndex > 0) {
-        currentIndex = (currentIndex - 1) % getCurrentSetLength();
-        document.getElementById("displayedImage").src = images[currentSet][currentIndex];
-        document.querySelector(".start-here-link").href = links[currentSet][currentIndex];
-        updateHeading();
-    }
-}
-
-    function updateHeading() {
-        document.getElementById("imageHeading").textContent = headings[currentSet][currentIndex];
+    // Function to show the previous image
+    function showPreviousImage() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        displayCurrentImage();
+      } else {
+        previousButton.style.display = "none";
+      }
     }
 
-    function changeContent(set) {
-        currentSet = set - 1;
-        currentIndex = 0;
-        document.getElementById('displayedImage').src = images[currentSet][currentIndex];
-        document.querySelector(".start-here-link").href = links[currentSet][currentIndex];
-        updateHeading();
-    }
+    // Event listener for the next button
+    document.getElementById("nextButton").addEventListener("click", showNextImage);
 
-    changeContent(1);
+    // Event listener for the previous button
+    document.getElementById("previousButton").addEventListener("click", showPreviousImage);
 
-    function getCurrentSetLength() {
-        return images[currentSet].length;
-    }
-
- 
-
+    // Initial display of the first image
+    displayCurrentImage();
