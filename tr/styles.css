@@ -80,12 +80,12 @@ body {
         }
 
         .mobile-menu {
-           	width: 30%;
+           	display: none;
+		width: 40%;
             	background-color: #9CB071; /* Adjust as needed */
            	padding: 3px;
 	    	box-sizing: border-box;
 	    	color: white;
-            	display: none;
             	position: absolute;
             	top: 0;
             	left: 0;
@@ -94,7 +94,7 @@ body {
         }
 
         .mobile-menu a {
-            	display: none;
+            	display: block;
 		color: white;
 		text-decoration: none;
 		padding: 2px 0;
@@ -343,12 +343,10 @@ body {
 	 }
         
 
-
-
 	#mobile-menu-toggle {
-    		background-color: white;
-	        display: none;
-    		font-size: 25px;
+    		display: none;
+		background-color: white;
+	        font-size: 25px;
    		color: black;
    	 	cursor: pointer;
    	 	position: fixed;
@@ -429,7 +427,6 @@ body {
 
 	.main-menu a {
         	display: none;
-		
 	    }
 
 	.banner-column {
@@ -438,14 +435,14 @@ body {
 
 
 	.mobile-menu {
-                width: 35%;
-                display: block;
+                display: none;
+		width: 40%;
             }
 
 	.mobile-menu a {
-                width: 90%;
                 display: block;
-		font-size: 0.8em;
+		width: 90%;
+                font-size: 0.8em;
             }
         .content {
                 display: block;
