@@ -26,8 +26,10 @@ body {
 		border-radius: 3px;
         }
 
-	.main-menu ul li:hover {
+	.main-menu a:hover {
             	background-color: #6d8241;
+		width: 88%;
+		text-align: center;
         }
 
         .main-menu ul {
@@ -55,8 +57,10 @@ body {
 		font-weight:bold;
         }
 		
-	.main-menu ul .sub-menu li:hover {
-            	background-color: #404B29;
+	.main-menu .active {
+            background-color: #6d8241;
+            width: 88%;
+	    text-align: center;
         }
 
         .main-menu .logo {
