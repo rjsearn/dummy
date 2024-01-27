@@ -109,10 +109,11 @@ body {
 		border-radius: 3px;
         }
 
-        .mobile-menu ul li:hover {
+        .mobile-menu a:hover {
             	background-color: #6d8241;
+		width: 88%;
+		text-align: center;
         }
-
         .mobile-menu ul {
             	list-style-type: none;
             	padding: 2%;
@@ -138,8 +139,10 @@ body {
 		font-weight:bold;
         }
 		
-	.mobile-menu ul .sub-menu li:hover {
-            	background-color: #404B29;
+	.mobile-menu .active {
+            background-color: #6d8241;
+            width: 88%;
+	    text-align: center;
         }
 
         .mobile-menu .logo {
