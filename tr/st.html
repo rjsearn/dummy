@@ -6,7 +6,7 @@
   <title>EasyBuilder Training Page</title>
   <link rel="stylesheet" type="text/css" href="styles.css" as="style" onload="this.rel='stylesheet'">
   <script src="st.js"></script>
-  <script src="script.js"></script>
+  <script src="tbbanners.js"></script>
 </head>
 <body>
   
@@ -119,23 +119,28 @@
 
 		<!-- Right BANNER Section -->
 		
-    <div class="banner-column">
+     <div class="banner-column">
         <div class="column-heading">Team Builds</div>
-        <div class="banner-frame">
-            <a href="https://llpgpro.com/RjsETB2024Plan/" target="_blank">
-			<img src="https://i.postimg.cc/7LSwpfhQ/Great-Life.gif" alt="Banner 1">
-		</div><br>
-        <div class="banner-frame">
-            <a href="https://llpgpro.com/RjsETB2024Plan/" target="_blank">
-			<img src="https://i.postimg.cc/PfZKBnhR/GDI.gif" alt="Banner 2">
-		</div><br>
-        <div class="banner-frame">
-            <a href="https://llpgpro.com/RjsETB2024Plan/" target="_blank">
-			<img src="https://i.postimg.cc/Qd9XJ63D/TBM.gif" alt="Banner 3">
+        <div class="banner-frame" onclick="openBannerLink()">
+			<a id="bannerTargetLink1" href="https://llpgpro.com/RjsETB2024Plan/" target="_blank">
+			<img id="bannerImageLink1" src="https://i.postimg.cc/7LSwpfhQ/Great-Life.gif" alt="Banner 1">
+			</a>
+		</div>
+		<div class="banner-frame" onclick="openBannerLink()">
+			<a id="bannerTargetLink2" href="https://llpgpro.com/RjsETB2024Plan/" target="_blank">
+			<img id="bannerImageLink2" src="https://i.postimg.cc/7LSwpfhQ/Great-Life.gif" alt="Banner 2">
+			</a>
+		</div>
+		<div class="banner-frame" onclick="openBannerLink()">
+			<a id="bannerTargetLink3" href="https://llpgpro.com/RjsETB2024Plan/" target="_blank">
+			<img id="bannerImageLink3" src="https://i.postimg.cc/7LSwpfhQ/Great-Life.gif" alt="Banner 3">
+			</a>
 		</div>
     </div>
 
 
 <script src="mobile.js"></script>
+<script src="bannerscript.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
