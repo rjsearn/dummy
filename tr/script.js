@@ -52,3 +52,6 @@
 
     // Initial display of the first image
     displayCurrentImage();
+
+    // Hide Right-Click Menu
+    document.addEventListener('contextmenu', event => event.preventDefault());
